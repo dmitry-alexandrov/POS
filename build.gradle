@@ -9,3 +9,7 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-3'
     //compile 'com.applitools:eyes-selenium-java3:3.156.5'
 }
+
+test {
+    useTestNG()
+}
