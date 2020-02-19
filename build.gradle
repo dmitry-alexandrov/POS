@@ -11,6 +11,11 @@ dependencies {
     implementation 'com.thoughtworks.xstream:xstream:1.4.11.1'
 }
 
+plugins {
+    id 'base'
+}
+
+
 task testPolls(type: Test) {
     useTestNG() {
         suites 'src/test/resources/testng.xml'
