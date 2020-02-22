@@ -9,26 +9,5 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-3'
     // compile 'com.applitools:eyes-selenium-java3:3.156.5'
     implementation 'com.thoughtworks.xstream:xstream:1.4.11.1'
-}
-
-plugins {
-    id 'base'
-}
-
-
-task testPolls(type: Test) {
-    useTestNG() {
-        suites 'src/test/resources/testng.xml'
-    }
-
-    if (project.hasProperty('browser')) {
-        systemProperty 'browser', "${browser}"
-    }
-    if (project.hasProperty('target')) {
-        systemProperty 'target', "${target}"
-    }
-    if (project.hasProperty('verifyUI')) {
-        systemProperty 'verifyUI', "${verifyUI}"
-    }
-
+    
 }
