@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6269bfd0-19fe-4ade-bbfb-590524ce0f3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ContestHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalDiscussionHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalValueHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ProjectHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/model/ContestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/model/LocalDiscussionData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/model/LocalValueData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/model/NewsData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/model/ProjectData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestCreationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsCreationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ProjectCreationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/NOTICE" beforeDir="false" />
@@ -14195,19 +14182,6 @@
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/src/wrapper/org/gradle/wrapper/WrapperConfiguration.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/src/wrapper/org/gradle/wrapper/WrapperExecutor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/HelperBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/NavigationHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/NavigationHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/PollHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/PollHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/TestBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/testng.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NavigationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/TestBase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -14235,7 +14209,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
@@ -14247,14 +14221,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ProjectHelper.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -14383,7 +14354,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/model/PollData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/SessionHelper.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java" />
@@ -14409,10 +14379,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/model/NewsData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsCreationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-3" />
     <option name="y" value="-21" />
     <option name="width" value="1918" />
@@ -14423,7 +14394,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -14493,6 +14463,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -14782,6 +14753,7 @@
       <workItem from="1582884820728" duration="1764000" />
       <workItem from="1582886635809" duration="2176000" />
       <workItem from="1582890625226" duration="599000" />
+      <workItem from="1582894479460" duration="455000" />
     </task>
     <servers />
   </component>
@@ -14818,13 +14790,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152885000" />
+    <option name="totallyTimeSpent" value="153373000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4717484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.47707888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -14873,13 +14845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -15196,6 +15161,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
     </entry>
