@@ -4,20 +4,25 @@ import com.example.tests.model.PollData;
 import com.sun.jdi.ByteType;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+
+import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertTrue;
 
 public class PollHelper extends HelperBase {
 
     public boolean acceptNextAlert = true;
+
     public PollHelper(WebDriver driver) {
       super(driver);
     }
 
-    public void submitPollCreation() {
+    public void submitPollCreation() throws InterruptedException {
       click(By.xpath("//button[@type='submit']"));
+      Thread.sleep(1000);
     }
 
   public void fillPollForm(PollData pollData) {
@@ -27,11 +32,16 @@ public class PollHelper extends HelperBase {
       click(By.xpath("//option[@value='10']"));
       click(By.id("poll-is_national_project"));
       new Select(driver.findElement(By.id("poll-is_national_project"))).selectByVisibleText("Да");
+
+
+
+
+
       click(By.xpath("(//option[@value='1'])[2]"));
       click(By.id("poll-form_date_from"));
-      click(By.xpath("//tr[5]/td[2]"));
+      click(By.xpath("//tr[5]/td[3]"));
       click(By.id("poll-form_date_to"));
-      click(By.xpath("//tr[5]/td[5]"));
+      click(By.xpath("//tr[6]/td[3]"));
       type(By.id("pollquestion-0-title"), pollData.getQuestion_1());
       type(By.id("pollquestion-0-choice_amount"), pollData.getAnswer_quantity_1());
       click(By.xpath("//form[@id='dynamic-form']/div[11]/div/div/div/div/div[2]/div[3]/div[2]/div/div/button/span"));
@@ -85,5 +95,7 @@ public class PollHelper extends HelperBase {
 
     public void submitPollModification() {
         click(By.xpath("//button[@type='submit']"));
+
     }
+
 }

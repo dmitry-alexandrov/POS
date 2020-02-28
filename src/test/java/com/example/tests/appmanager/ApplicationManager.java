@@ -17,6 +17,12 @@ public class ApplicationManager {
     private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
     private PollHelper pollHelper;
+    private LocalPollHelper localPollHelper;
+    private LocalValueHelper localValueHelper;
+    private LocalDiscussionHelper localDiscussionHelper;
+    private ContestHelper contestHelper;
+    private ProjectHelper projectHelper;
+    private NewsHelper newsHelper;
     public String baseUrl;
     public StringBuffer verificationErrors = new StringBuffer();
     private String browser;
@@ -38,6 +44,12 @@ public class ApplicationManager {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("http://pos3.maxitlab.com/og/login");
         pollHelper = new PollHelper(driver);
+        localPollHelper = new LocalPollHelper(driver);
+        localValueHelper = new LocalValueHelper(driver);
+        localDiscussionHelper = new LocalDiscussionHelper(driver);
+        contestHelper = new ContestHelper(driver);
+        projectHelper = new ProjectHelper(driver);
+        newsHelper = new NewsHelper(driver);
         navigationHelper = new NavigationHelper(driver);
         sessionHelper = new SessionHelper(driver);
         sessionHelper.login("admin", "APwM$25Ek4pEfXu1N");
@@ -65,6 +77,18 @@ public class ApplicationManager {
     public PollHelper getPollHelper() {
         return pollHelper;
     }
+
+    public LocalPollHelper getLocalPollHelper() { return localPollHelper; }
+
+    public LocalValueHelper getLocalValueHelper() { return localValueHelper; }
+
+    public LocalDiscussionHelper getLocalDiscussionHelper() { return localDiscussionHelper; }
+
+    public ContestHelper getContestHelper() { return  contestHelper; }
+
+    public ProjectHelper getProjectHelper() { return projectHelper; }
+
+    public NewsHelper getNewsHelper() { return  newsHelper; }
 
     public NavigationHelper getNavigationHelper() {
         return navigationHelper;

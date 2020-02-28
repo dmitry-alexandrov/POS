@@ -1,6 +1,8 @@
 package com.example.tests.test;
 
+import com.example.tests.model.LocalPollData;
 import com.example.tests.appmanager.ApplicationManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.BrowserType;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -22,4 +24,8 @@ public class TestBase {
     public ApplicationManager getApp() {
         return app;
     }
+
+
+
+
 }
