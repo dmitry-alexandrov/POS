@@ -14181,6 +14181,7 @@
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/src/wrapper/org/gradle/wrapper/SystemPropertiesHandler.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/src/wrapper/org/gradle/wrapper/WrapperConfiguration.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/src/wrapper/org/gradle/wrapper/WrapperExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -14208,15 +14209,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor" />
@@ -14259,8 +14251,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="45" selection-start-line="10" selection-start-column="3" selection-end-line="13" selection-end-column="45" />
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="775">
+              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -14364,11 +14368,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ProjectCreationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ProjectHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NavigationHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/model/NewsData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsCreationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" />
       </list>
     </option>
   </component>
@@ -14383,6 +14387,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -14459,8 +14465,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -14495,7 +14499,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.NewsCreationTests">
+  <component name="RunManager" selected="TestNG.PollCreationTests">
     <configuration name="C:/POS/src/test/resources/testng.xml" type="TestNG" nameIsGenerated="true">
       <module name="POS.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
@@ -14540,40 +14544,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalPollCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="POS.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.tests.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.LocalPollCreationTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocalValueCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="POS.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.tests.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.tests.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.test.LocalValueCreationTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NewsCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POS.test" />
       <extension name="coverage">
@@ -14584,6 +14554,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.tests.test" />
       <option name="MAIN_CLASS_NAME" value="com.example.tests.test.NewsCreationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PollCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="POS.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tests.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tests.test" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.test.PollCreationTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -14610,20 +14597,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.C:/POS/src/test/resources/testng.xml" />
-      <item itemvalue="TestNG.LocalPollCreationTests" />
-      <item itemvalue="TestNG.LocalValueCreationTests" />
       <item itemvalue="TestNG.LocalDiscussionCreationTests" />
       <item itemvalue="TestNG.ContestCreationTests" />
       <item itemvalue="TestNG.ProjectCreationTests" />
       <item itemvalue="TestNG.NewsCreationTests" />
+      <item itemvalue="TestNG.PollCreationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PollCreationTests" />
         <item itemvalue="TestNG.NewsCreationTests" />
         <item itemvalue="TestNG.ProjectCreationTests" />
         <item itemvalue="TestNG.ContestCreationTests" />
         <item itemvalue="TestNG.LocalDiscussionCreationTests" />
-        <item itemvalue="TestNG.LocalValueCreationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -14750,14 +14736,12 @@
       <workItem from="1582886635809" duration="2176000" />
       <workItem from="1582890625226" duration="599000" />
       <workItem from="1582894479460" duration="2023000" />
-      <workItem from="1582898414257" duration="245000" />
+      <workItem from="1582898414257" duration="855000" />
+      <workItem from="1582908657848" duration="702000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NewsCreationTests - 2020.02.28 at 14h 05m 49s.xml">
-      <configuration name="NewsCreationTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="NewsCreationTests - 2020.02.28 at 14h 06m 28s.xml">
       <configuration name="NewsCreationTests" configurationId="TestNG" />
     </history-entry>
@@ -14785,15 +14769,18 @@
     <history-entry file="NewsCreationTests - 2020.02.28 at 14h 10m 41s.xml">
       <configuration name="NewsCreationTests" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="PollCreationTests - 2020.02.28 at 19h 52m 55s.xml">
+      <configuration name="PollCreationTests" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155153000" />
+    <option name="totallyTimeSpent" value="156465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19402985" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -14802,7 +14789,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2564935" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2564935" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -15071,32 +15058,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="90" column="60" selection-start-line="90" selection-start-column="60" selection-end-line="90" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="408">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-polls.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsCreationTests.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -15115,16 +15085,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#submitLocalPollCreation#0;class#LocalPollHelper#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="45" selection-start-line="10" selection-start-column="3" selection-end-line="13" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -15165,6 +15125,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-polls.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

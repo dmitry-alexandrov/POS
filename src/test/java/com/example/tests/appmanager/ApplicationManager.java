@@ -1,6 +1,7 @@
 package com.example.tests.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -53,6 +54,9 @@ public class ApplicationManager {
         navigationHelper = new NavigationHelper(driver);
         sessionHelper = new SessionHelper(driver);
         sessionHelper.login("admin", "APwM$25Ek4pEfXu1N");
+        Dimension d = new Dimension(1920,1080);
+//Resize the current window to the given dimension
+        driver.manage().window().setSize(d);
     }
 
 
