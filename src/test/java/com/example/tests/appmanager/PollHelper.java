@@ -61,7 +61,7 @@ public class PollHelper extends HelperBase {
     }
 
   public void initPollCreation() throws InterruptedException {
-      Thread.sleep(1000);
+      Thread.sleep(5000);
     click(By.linkText("Создать Опрос"));
   }
 
