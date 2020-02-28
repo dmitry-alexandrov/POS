@@ -16,3 +16,7 @@ dependencies {
     
 }
 
+test {
+	useTestNG()
+}
+
