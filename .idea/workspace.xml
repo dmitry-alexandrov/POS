@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6269bfd0-19fe-4ade-bbfb-590524ce0f3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/NOTICE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/bin/gradle" beforeDir="false" />
@@ -14181,7 +14180,6 @@
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/src/wrapper/org/gradle/wrapper/SystemPropertiesHandler.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/src/wrapper/org/gradle/wrapper/WrapperConfiguration.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tools/gradle-6.0.1/src/wrapper/org/gradle/wrapper/WrapperExecutor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -14304,7 +14302,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="574">
-              <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+              <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#submitPollCreation#0;class#PollHelper#0" />
@@ -14745,7 +14743,7 @@
       <workItem from="1582894479460" duration="2023000" />
       <workItem from="1582898414257" duration="855000" />
       <workItem from="1582908657848" duration="1162000" />
-      <workItem from="1582910534510" duration="650000" />
+      <workItem from="1582910534510" duration="1022000" />
     </task>
     <servers />
   </component>
@@ -14782,10 +14780,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157575000" />
+    <option name="totallyTimeSpent" value="157947000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19829424" />
@@ -15154,7 +15152,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="574">
-          <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#submitPollCreation#0;class#PollHelper#0" />
