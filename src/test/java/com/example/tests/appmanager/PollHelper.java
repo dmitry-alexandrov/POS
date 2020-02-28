@@ -60,7 +60,8 @@ public class PollHelper extends HelperBase {
       type(By.id("pollquestionoption-1-3-value"), pollData.getAnswer_option_2_4());
     }
 
-  public void initPollCreation() {
+  public void initPollCreation() throws InterruptedException {
+      Thread.sleep(1000);
     click(By.linkText("Создать Опрос"));
   }
 
