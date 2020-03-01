@@ -8,6 +8,10 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
@@ -36,8 +40,10 @@ public class ApplicationManager {
         properties = new Properties();
     }
 
-    public void init() throws MalformedURLException {
+    public void init() throws IOException {
 
+        String target = System.getProperty("target", "local");
+        properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
      if ("".equals(properties.getProperty("selenium.server"))) {
 
          if (browser.equals(BrowserType.FIREFOX)) {
