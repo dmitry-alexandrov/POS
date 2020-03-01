@@ -8,6 +8,7 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -35,7 +36,7 @@ public class ApplicationManager {
         properties = new Properties();
     }
 
-    public void init() {
+    public void init() throws MalformedURLException {
 
      if ("".equals(properties.getProperty("selenium.server"))) {
 
@@ -52,7 +53,7 @@ public class ApplicationManager {
          DesiredCapabilities capabilities = new DesiredCapabilities();
          capabilities.setBrowserName(browser);
          driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
-
+     }
         baseUrl = "https://www.google.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("http://pos.maxitlab.com/og/login");
