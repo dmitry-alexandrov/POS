@@ -1,7 +1,7 @@
 package com.example.tests.appmanager;
 
 import com.example.tests.model.PollData;
-import com.sun.jdi.ByteType;
+//import com.sun.jdi.ByteType;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -62,7 +62,7 @@ public class PollHelper extends HelperBase {
 
   public void initPollCreation() throws InterruptedException {
       Thread.sleep(3000);
-    click(By.xpath("/html/body/main/div/div/div/div/div/p/a")); 
+    click(By.xpath("/html/body/main/div/div/div/div/div/p/a"));
   }
 
     public String closeAlertAndGetItsText() {
