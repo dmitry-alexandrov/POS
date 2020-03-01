@@ -1,19 +1,21 @@
 package com.example.tests.appmanager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.URL;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.fail;
 
 public class ApplicationManager {
+    private final Properties properties;
     WebDriver driver;
     private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
@@ -30,20 +32,30 @@ public class ApplicationManager {
 
     public ApplicationManager(String browser) {
         this.browser = browser;
+        properties = new Properties();
     }
 
     public void init() {
-        if (browser.equals(BrowserType.FIREFOX)) {
-            driver = new FirefoxDriver();
-        } else if (browser.equals(BrowserType.CHROME)) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
-            driver = new ChromeDriver();
-        } else if (browser.equals(BrowserType.IE)) {
-            driver = new InternetExplorerDriver();
-        }
+
+     if ("".equals(properties.getProperty("selenium.server"))) {
+
+         if (browser.equals(BrowserType.FIREFOX)) {
+             driver = new FirefoxDriver();
+         } else if (browser.equals(BrowserType.CHROME)) {
+             System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
+             driver = new ChromeDriver();
+         } else if (browser.equals(BrowserType.IE)) {
+             driver = new InternetExplorerDriver();
+         }
+     } else {
+
+         DesiredCapabilities capabilities = new DesiredCapabilities();
+         capabilities.setBrowserName(browser);
+         driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+
         baseUrl = "https://www.google.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.get("http://pos3.maxitlab.com/og/login");
+        driver.get("http://pos.maxitlab.com/og/login");
         pollHelper = new PollHelper(driver);
         localPollHelper = new LocalPollHelper(driver);
         localValueHelper = new LocalValueHelper(driver);
