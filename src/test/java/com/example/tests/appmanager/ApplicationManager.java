@@ -47,7 +47,10 @@ public class ApplicationManager {
      if ("".equals(properties.getProperty("selenium.server"))) {
 
          if (browser.equals(BrowserType.FIREFOX)) {
+             System.setProperty("webdriver.firefox.driver", "/usr/local/bin/firefox");
+             driver = new ChromeDriver();
              driver = new FirefoxDriver();
+
          } else if (browser.equals(BrowserType.CHROME)) {
              System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
              driver = new ChromeDriver();
