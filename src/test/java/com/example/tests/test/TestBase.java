@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 
 public class TestBase {
 
-    protected final ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.FIREFOX));
+    protected final ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
 
     @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
