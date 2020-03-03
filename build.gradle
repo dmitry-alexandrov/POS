@@ -32,3 +32,10 @@ task testPolls(type: Test) {
         systemProperty 'verifyUI', "${verifyUI}"
     }
 }
+
+tasks.withType(JavaCompile) {
+    options.with {
+        encoding = 'UTF-8'
+        ...
+    }
+}
