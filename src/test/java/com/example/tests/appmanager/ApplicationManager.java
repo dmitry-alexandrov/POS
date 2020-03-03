@@ -47,7 +47,7 @@ public class ApplicationManager {
      if ("".equals(properties.getProperty("selenium.server"))) {
 
          if (browser.equals(BrowserType.FIREFOX)) {
-             System.setProperty("webdriver.firefox.driver", "/usr/local/bin/geckodriver");
+             System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
              driver = new FirefoxDriver();
 
          } else if (browser.equals(BrowserType.CHROME)) {
