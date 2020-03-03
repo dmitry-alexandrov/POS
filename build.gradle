@@ -36,6 +36,5 @@ task testPolls(type: Test) {
 tasks.withType(JavaCompile) {
     options.with {
         encoding = 'UTF-8'
-        ...
     }
 }
