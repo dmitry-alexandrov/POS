@@ -6,4 +6,9 @@
             <class name="com.example.tests.test.PollCreationTests" />
         </classes>
     </test>
+    <test name="Polls" >
+        <classes>
+            <class name="com.example.tests.test.PollDeletionTests" />
+        </classes>
+    </test>
 </suite>
