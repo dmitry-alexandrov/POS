@@ -6,7 +6,7 @@
             <class name="com.example.tests.test.PollCreationTests" />
         </classes>
     </test>
-    <test name="Polls" >
+    <test name="Polls1" >
         <classes>
             <class name="com.example.tests.test.PollDeletionTests" />
         </classes>
