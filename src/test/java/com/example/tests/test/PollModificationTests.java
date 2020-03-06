@@ -9,7 +9,7 @@ public class PollModificationTests extends TestBase {
         app.getNavigationHelper().gotoPollListPage();
         app.getPollHelper().selectPoll();
         app.getPollHelper().initPollModification();
-        app.getPollHelper().fillPollForm(new PollData("Тестовый опрос", "Описание тестового опроса", "Вопрос №1", "2", "Вариант ответа 1", "Вариант ответа 2", "Вариант ответа 3", "Вопрос №2", "3", "Вариант ответа 1", "Вариант ответа 2", "Вариант ответа 3", "Вариант ответа 4"));
+        app.getPollHelper().modifyPollForm(new PollData("Тестовый опрос", "Описание тестового опроса ред.", "Вопрос №1 ред.", "2", "Вариант ответа 1 ред.", "Вариант ответа 2 ред.", "Вариант ответа 3 ред.", "Вопрос №2 ред.", "3", "Вариант ответа 1 ред.", "Вариант ответа 2 ред.", "Вариант ответа 3 ред.", "Вариант ответа 4 ред."));
         app.getPollHelper().submitPollModification();
     }
 

@@ -1,0 +1,14 @@
+{
+  "esia_id": "{{esia_id}}",
+  "email": "{{email}}",
+  "answers": [
+    {
+    "poll_question_id": "{{poll_question_id}}",
+    "poll_question_option_id":
+      [
+        {"id": "{{id}}"}
+      ]
+    }
+  ]
+}
+

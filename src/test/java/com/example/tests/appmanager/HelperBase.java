@@ -2,6 +2,7 @@ package com.example.tests.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 import java.io.File;
@@ -28,6 +29,14 @@ public class HelperBase {
         driver.findElement(locator).sendKeys(file.getAbsolutePath());
     }
 
+    public boolean isElementPresent(By locator) {
+       try {
+         driver.findElement(locator);
+         return true;
+       } catch (NoSuchElementException ex) {
+           return false;
+       }
+}
 
     public boolean isAlertPresent() {
         try {

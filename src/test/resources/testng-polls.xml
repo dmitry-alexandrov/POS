@@ -6,4 +6,94 @@
             <class name="com.example.tests.test.PollCreationTests" />
         </classes>
     </test>
+
+<test name="Polls" >
+    <classes>
+        <class name="com.example.tests.test.PollDeletionTests" />
+    </classes>
+</test>
+
+    <test name="Polls" >
+        <classes>
+            <class name="com.example.tests.test.PollCreationTests" />
+        </classes>
+    </test>
+
+    <test name="Polls" >
+        <classes>
+            <class name="com.example.tests.test.PollModificationTests" />
+        </classes>
+    </test>
+
+    <test name="LocalValue" >
+        <classes>
+            <class name="com.example.tests.test.LocalValueCreationTests" />
+        </classes>
+    </test>
+
+    <test name="LocalValue" >
+        <classes>
+            <class name="com.example.tests.test.LocalValueDeletionTests" />
+        </classes>
+    </test>
+
+    <test name="LocalValue" >
+        <classes>
+            <class name="com.example.tests.test.LocalValueCreationTests" />
+        </classes>
+    </test>
+
+    <test name="LocalValue" >
+        <classes>
+            <class name="com.example.tests.test.LocalValueModificationTests" />
+        </classes>
+    </test>
+
+    <test name="LocalPoll" >
+        <classes>
+            <class name="com.example.tests.test.LocalPollCreationTests" />
+        </classes>
+    </test>
+
+    <test name="LocalPoll" >
+        <classes>
+            <class name="com.example.tests.test.LocalPollDeletionTests" />
+        </classes>
+    </test>
+
+    <test name="LocalPoll" >
+        <classes>
+            <class name="com.example.tests.test.LocalPollCreationTests" />
+        </classes>
+    </test>
+
+    <test name="LocalPoll" >
+        <classes>
+            <class name="com.example.tests.test.LocalPollModificationTests" />
+        </classes>
+    </test>
+
+    <test name="LocalDiscussion" >
+        <classes>
+            <class name="com.example.tests.test.LocalDiscussionCreationTests" />
+        </classes>
+    </test>
+
+    <test name="LocalDiscussion" >
+        <classes>
+            <class name="com.example.tests.test.LocalDiscussionDeletionTests" />
+        </classes>
+    </test>
+
+    <test name="LocalDiscussion" >
+        <classes>
+            <class name="com.example.tests.test.LocalDiscussionCreationTests" />
+        </classes>
+    </test>
+
+    <test name="LocalDiscussion" >
+        <classes>
+            <class name="com.example.tests.test.LocalDiscussionModificationTests" />
+        </classes>
+    </test>
 </suite>
