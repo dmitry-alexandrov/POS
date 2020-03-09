@@ -51,7 +51,8 @@ public class ApplicationManager {
              driver = new FirefoxDriver();
 
          } else if (browser.equals(BrowserType.CHROME)) {
-          //   System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
+             System.setProperty("webdriver.chrome.driver", "/opt/google/chrome");
+             //"C:\\Tools\\Tools\\chromedriver.exe"
              driver = new ChromeDriver();
          } else if (browser.equals(BrowserType.IE)) {
              System.setProperty("webdriver.ie.driver", "C:\\Tools\\Tools\\IEDriverServer.exe");
