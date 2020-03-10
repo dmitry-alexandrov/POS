@@ -3,7 +3,7 @@
 <suite name="Suite1" verbose="1" >
     <test name="Polls" >
         <classes>
-            <class name="com.example.tests.test.PollModificationTests" />
+            <class name="com.example.tests.test.PollCreationTests" />
         </classes>
     </test>
 </suite>
