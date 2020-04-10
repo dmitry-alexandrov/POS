@@ -52,7 +52,7 @@ public class PollHelper extends HelperBase {
       //*[@id="pollquestionoption-1-0-value"]
       click(By.xpath("//form[@id='dynamic-form']/div[11]/div/div[2]/div[2]/div[3]/div[2]/div/div/button/span"));
       click(By.xpath("//form[@id='dynamic-form']/div[11]/div/div[2]/div[2]/div[3]/div[2]/div/div/button/span"));
-      click(By.xpath("//form[@id='dynamic-form']/div[11]/div/div[2]/div[2]/div[3]/div[2]/div/div/button/span"));
+      //click(By.xpath("//form[@id='dynamic-form']/div[11]/div/div[2]/div[2]/div[3]/div[2]/div/div/button/span"));
       type(By.id("pollquestionoption-1-0-value"), pollData.getAnswer_option_2_1());
       type(By.id("pollquestionoption-1-1-value"), pollData.getAnswer_option_2_2());
       type(By.id("pollquestionoption-1-2-value"), pollData.getAnswer_option_2_3());
