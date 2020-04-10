@@ -73,9 +73,9 @@ public class PollHelper extends HelperBase {
 
         click(By.xpath("(//option[@value='1'])[2]"));
         click(By.id("poll-form_date_from"));
-        click(By.xpath("//tr[5]/td[3]"));
+        click(By.xpath("//tr[3]/td[2]"));
         click(By.id("poll-form_date_to"));
-        click(By.xpath("//tr[6]/td[3]"));
+        click(By.xpath("//tr[6]/td[2]"));
         type(By.id("pollquestion-0-title"), pollData.getQuestion_1());
         type(By.id("pollquestion-0-choice_amount"), pollData.getAnswer_quantity_1());
        // click(By.xpath("//form[@id='dynamic-form']/div[11]/div/div/div/div/div[2]/div[3]/div[2]/div/div/button/span"));
