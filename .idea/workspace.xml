@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6269bfd0-19fe-4ade-bbfb-590524ce0f3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-polls.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-polls.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6269bfd0-19fe-4ade-bbfb-590524ce0f3b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -227,7 +223,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="181" />
     <option name="y" value="93" />
     <option name="width" value="1413" />
@@ -678,7 +674,7 @@
       <workItem from="1589205153115" duration="1699000" />
       <workItem from="1589207078579" duration="1487000" />
       <workItem from="1589208987896" duration="1658000" />
-      <workItem from="1589210812581" duration="428000" />
+      <workItem from="1589210812581" duration="806000" />
     </task>
     <servers />
   </component>
@@ -715,10 +711,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278603000" />
+    <option name="totallyTimeSpent" value="278981000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40458423" />
