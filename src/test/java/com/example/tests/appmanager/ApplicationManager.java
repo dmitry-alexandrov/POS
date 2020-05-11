@@ -42,7 +42,7 @@ public class ApplicationManager {
 
     public void init() throws IOException {
 
-        String target = System.getProperty("target", "local");
+        String target = System.getProperty("target", "remote");
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
      if ("".equals(properties.getProperty("selenium.server"))) {
 
@@ -52,7 +52,7 @@ public class ApplicationManager {
 
          } else if (browser.equals(BrowserType.CHROME)) {
              System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-             //  "C:\\Tools\\Tools\\chromedriver.exe"
+             //"C:\\Tools\\Tools\\chromedriver.exe"
              driver = new ChromeDriver();
          } else if (browser.equals(BrowserType.IE)) {
              System.setProperty("webdriver.ie.driver", "C:\\Tools\\Tools\\IEDriverServer.exe");
