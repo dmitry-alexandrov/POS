@@ -83,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng-polls.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -113,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="816">
@@ -340,7 +340,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.PollCreationTests">
+  <component name="RunManager" selected="TestNG.C:/POS/src/test/resources/testng-polls.xml">
+    <configuration name="C:/POS/src/test/resources/testng-polls.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="POS.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-polls.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/POS/src/test/resources/testng.xml" type="TestNG" nameIsGenerated="true">
       <module name="POS.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
@@ -385,23 +395,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalValueDeletionTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="POS.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.tests.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.tests.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.test.LocalValueDeletionTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PollCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POS.test" />
       <extension name="coverage">
@@ -438,19 +431,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.C:/POS/src/test/resources/testng.xml" />
-      <item itemvalue="TestNG.LocalValueDeletionTests" />
       <item itemvalue="TestNG.LocalDiscussionCreationTests" />
       <item itemvalue="TestNG.LocalDiscussionModificationTests" />
       <item itemvalue="TestNG.PollCreationTests" />
       <item itemvalue="TestNG.PollDeletionTests" />
+      <item itemvalue="TestNG.C:/POS/src/test/resources/testng-polls.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/POS/src/test/resources/testng-polls.xml" />
         <item itemvalue="TestNG.PollCreationTests" />
         <item itemvalue="TestNG.PollDeletionTests" />
         <item itemvalue="TestNG.LocalDiscussionModificationTests" />
         <item itemvalue="TestNG.LocalDiscussionCreationTests" />
-        <item itemvalue="TestNG.LocalValueDeletionTests" />
       </list>
     </recent_temporary>
   </component>
@@ -663,7 +656,7 @@
       <workItem from="1586525306005" duration="599000" />
       <workItem from="1586527493020" duration="1236000" />
       <workItem from="1586547347385" duration="55000" />
-      <workItem from="1589183553852" duration="568000" />
+      <workItem from="1589183553852" duration="840000" />
     </task>
     <servers />
   </component>
@@ -700,7 +693,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264266000" />
+    <option name="totallyTimeSpent" value="264538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1141,6 +1134,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-polls.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -1148,13 +1148,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-polls.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
