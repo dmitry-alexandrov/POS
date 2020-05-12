@@ -119,9 +119,9 @@ public class PollHelper extends HelperBase {
 
     public void deletePoll() throws InterruptedException {
       click(By.linkText("Удалить"));
-        Thread.sleep(1000)
+        Thread.sleep(1000);
       assertTrue(closeAlertAndGetItsText().matches("^Вы действительно хотите удалить этот элемент[\\s\\S]$"));
-        Thread.sleep(1000)
+        Thread.sleep(1000);
     }
 
     public void selectPoll() {
