@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class PollModificationTests extends TestBase {
     @Test
-    public void testPollModification() {
+    public void testPollModification() throws InterruptedException {
         app.getNavigationHelper().gotoPollListPage();
         app.getPollHelper().selectPoll();
         app.getPollHelper().initPollModification();
