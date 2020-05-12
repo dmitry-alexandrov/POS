@@ -21,7 +21,7 @@ import static org.testng.Assert.fail;
 
 public class ApplicationManager {
     private final Properties properties;
-    WebDriver driver;
+    public static WebDriver driver;
     private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
     private PollHelper pollHelper;
@@ -41,7 +41,7 @@ public class ApplicationManager {
     }
 
     public void init() throws IOException {
-
+        System.out.println("inside init");
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
      if ("".equals(properties.getProperty("selenium.server"))) {
@@ -51,8 +51,8 @@ public class ApplicationManager {
              driver = new FirefoxDriver();
 
          } else if (browser.equals(BrowserType.CHROME)) {
-             System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
-             //"/usr/local/bin/chromedriver"
+             System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+             //"C:\\Tools\\Tools\\chromedriver.exe"
              driver = new ChromeDriver();
          } else if (browser.equals(BrowserType.IE)) {
              System.setProperty("webdriver.ie.driver", "C:\\Tools\\Tools\\IEDriverServer.exe");
@@ -85,7 +85,8 @@ public class ApplicationManager {
 
 
     public void stop() {
-        driver.quit();
+        System.out.println("inside stop");
+         driver.quit();
         String verificationErrorString = verificationErrors.toString();
         if (!"".equals(verificationErrorString)) {
           fail(verificationErrorString);
