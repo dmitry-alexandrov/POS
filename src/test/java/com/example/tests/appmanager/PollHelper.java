@@ -5,6 +5,7 @@ import com.example.tests.model.PollData;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
@@ -116,9 +117,11 @@ public class PollHelper extends HelperBase {
       }
     }
 
-    public void deletePoll() {
+    public void deletePoll() throws InterruptedException {
       click(By.linkText("Удалить"));
+        Thread.sleep(1000)
       assertTrue(closeAlertAndGetItsText().matches("^Вы действительно хотите удалить этот элемент[\\s\\S]$"));
+        Thread.sleep(1000)
     }
 
     public void selectPoll() {
