@@ -6,6 +6,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import ru.yandex.qatools.allure.annotations.Attachment;
 
+
 public class MyTestListener implements ITestListener {
 
     @Override
