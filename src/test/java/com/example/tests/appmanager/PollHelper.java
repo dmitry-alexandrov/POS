@@ -125,7 +125,7 @@ public class PollHelper extends HelperBase {
     }
 
     public void selectPoll() {
-      click(By.linkText("Тестовый опрос ред."));
+      click(By.linkText("Тестовый опрос"));
       acceptNextAlert = true;
     }
 
