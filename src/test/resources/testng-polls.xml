@@ -5,6 +5,7 @@
         <classes>
             <class name="com.example.tests.test.PollDeletionTests"/>
             <class name="com.example.tests.test.PollCreationTests"/>
+            <class name="com.example.tests.test.PollDeletionTests"/>
         </classes>
     </test>
 </suite>
