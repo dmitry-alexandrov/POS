@@ -133,9 +133,10 @@ public class PollHelper extends HelperBase {
         click(By.linkText("Редактировать"));
     }
 
-    public void submitPollModification() {
+    public void submitPollModification() throws InterruptedException {
+        Thread.sleep(1000);
         click(By.xpath("//button[@type='submit']"));
-
+        Thread.sleep(2000);
     }
 
     public void checkElements() {
