@@ -51,7 +51,7 @@ public class LocalPollHelper extends HelperBase {
     }
 
     public void initLocalPollCreation() {
-        click(By.linkText("Создать Опрос МЗ"));
+        click(By.linkText("Создать обсуждение (опрос)"));
     }
 
     public void selectLocalPoll() {
@@ -85,8 +85,9 @@ public class LocalPollHelper extends HelperBase {
         click(By.linkText("Редактировать"));
     }
 
-    public void submitLocalPollModification() {
+    public void submitLocalPollModification() throws InterruptedException {
         click(By.xpath("//button[@type='submit']"));
+        Thread.sleep(2000);
 
     }
 
@@ -116,6 +117,11 @@ public class LocalPollHelper extends HelperBase {
         type(By.id("pollquestionoption-0-0-value"), localPollData.getQuestion_option_1());
         type(By.id("pollquestionoption-0-1-value"), localPollData.getQuestion_option_2());
         //driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
+    }
+
+    public void publishLocalPoll() throws InterruptedException {
+        click(By.linkText("Опубликовать"));
+        Thread.sleep(3000);
     }
 
 }

@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 
 public class PollDeletionTests extends TestBase {
+
   @Test
   public void testPollDeletion() throws Exception {
     app.getNavigationHelper().gotoPollListPage();

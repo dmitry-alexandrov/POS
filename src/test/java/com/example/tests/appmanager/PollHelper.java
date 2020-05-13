@@ -5,10 +5,8 @@ import com.example.tests.model.PollData;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-
 import static org.testng.Assert.assertTrue;
 
 public class PollHelper extends HelperBase {
@@ -24,7 +22,7 @@ public class PollHelper extends HelperBase {
       Thread.sleep(2000);
     }
 
-  public void fillPollForm(PollData pollData) {
+    public void fillPollForm(PollData pollData) {
       type(By.id("poll-title"), pollData.getName());
       type(By.id("poll-description"), pollData.getDescription());
       click(By.id("poll-level"));
@@ -96,7 +94,6 @@ public class PollHelper extends HelperBase {
         type(By.id("pollquestionoption-1-3-value"), pollData.getAnswer_option_2_4());
     }
 
-
     public void initPollCreation() throws InterruptedException {
       Thread.sleep(3000);
     click(By.xpath("/html/body/main/div/div/div/div/div/p/a"));
@@ -147,6 +144,12 @@ public class PollHelper extends HelperBase {
 
     }
 
+    public void publishPoll() throws InterruptedException{
+
+        click(By.linkText("Опубликовать"));
+        Thread.sleep(3000);
+
+    }
 
 }
 

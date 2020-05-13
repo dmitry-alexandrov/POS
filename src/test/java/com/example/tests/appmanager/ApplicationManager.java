@@ -51,7 +51,7 @@ public class ApplicationManager {
              driver = new FirefoxDriver();
 
          } else if (browser.equals(BrowserType.CHROME)) {
-             System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+             System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
              // "/usr/local/bin/chromedriver"
              driver = new ChromeDriver();
          } else if (browser.equals(BrowserType.IE)) {
@@ -85,7 +85,6 @@ public class ApplicationManager {
 
 
     public void stop() {
-        System.out.println("inside stop");
          driver.quit();
         String verificationErrorString = verificationErrors.toString();
         if (!"".equals(verificationErrorString)) {

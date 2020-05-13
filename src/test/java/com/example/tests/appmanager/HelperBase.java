@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import java.io.File;
 
 public class HelperBase {
-    protected WebDriver driver;
+    public static WebDriver driver;
 
     public HelperBase(WebDriver driver) {
         this.driver = driver;

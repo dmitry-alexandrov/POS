@@ -52,7 +52,7 @@ public class LocalValueHelper extends HelperBase {
     }
 
     public void initLocalValueCreation() {
-        click(By.linkText("Создать Оценку МЗ"));
+        click(By.linkText("Создать обсуждение (оценка)"));
     }
 
     public void selectLocalValue() {
@@ -120,4 +120,10 @@ public class LocalValueHelper extends HelperBase {
         assertTrue(closeAlertAndGetItsText().matches("^Вы действительно хотите удалить этот элемент[\\s\\S]$"));
         Thread.sleep(1000);
     }
+
+    public void publishLocalValue() throws InterruptedException {
+        click(By.linkText("Опубликовать"));
+        Thread.sleep(3000);
+    }
+
 }

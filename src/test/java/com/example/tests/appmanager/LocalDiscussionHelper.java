@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Keys;
 
+import static org.testng.Assert.assertTrue;
+
 
 public class LocalDiscussionHelper extends HelperBase {
 
@@ -47,7 +49,7 @@ public class LocalDiscussionHelper extends HelperBase {
     }
 
     public void initLocalDiscussionCreation() {
-        click(By.linkText("Создать Обсуждение документа МЗ"));
+        click(By.linkText("Создать обсуждение (комментирование)"));
     }
 
     public void initLocalDiscussionModification() {
@@ -104,6 +106,18 @@ public class LocalDiscussionHelper extends HelperBase {
             acceptNextAlert = true;
         }
 
+    }
+
+    public void deleteLocalDiscussion() throws InterruptedException {
+        click(By.linkText("Удалить"));
+        Thread.sleep(1000);
+        assertTrue(closeAlertAndGetItsText().matches("^Вы действительно хотите удалить этот элемент[\\s\\S]$"));
+        Thread.sleep(1000);
+    }
+
+    public void publishLocalDiscussion() throws InterruptedException {
+        click(By.linkText("Опубликовать"));
+        Thread.sleep(3000);
     }
 
 }
