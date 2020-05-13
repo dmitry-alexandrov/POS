@@ -2,60 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6269bfd0-19fe-4ade-bbfb-590524ce0f3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestDeletionTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestModificationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestPublicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionPublicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalPollPublicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalValuePublicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsDeletionTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsModificationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsPublicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollPublicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ProjectDeletionTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ProjectModificationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ContestHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ContestHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/HelperBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalDiscussionHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalDiscussionHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalPollHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalPollHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalValueHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalValueHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/NavigationHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/NavigationHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/NewsHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/NewsHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/PollHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/PollHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ProjectHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ProjectHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/SessionHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/SessionHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ContestCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ContestCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionDeletionTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionModificationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollDeletionTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollModificationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalValueCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalValueCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalValueDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalValueDeletionTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalValueModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalValueModificationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/NewsCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/NewsCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollDeletionTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollModificationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ProjectCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ProjectCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/TestBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/testng-polls.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/testng-polls.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ContestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ContestHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalDiscussionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalDiscussionHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalPollHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalPollHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalValueHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalValueHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ProjectHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ProjectHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionDeletionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/MyTestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/MyTestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollDeletionTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testng-polls.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-polls.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -97,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng-polls.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="78" lean-forward="true" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+            <state relative-caret-position="85">
+              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -109,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="68">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -118,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="794">
-              <caret line="149" column="27" lean-forward="true" selection-start-line="149" selection-start-column="27" selection-end-line="149" selection-end-column="27" />
+              <caret line="149" column="27" selection-start-line="149" selection-start-column="27" selection-end-line="149" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#submitPollCreation#0;class#PollHelper#0" />
@@ -139,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalPollModificationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="68">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -151,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalPollHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
+            <state relative-caret-position="1275">
               <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -165,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalValueModificationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="102">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -177,7 +124,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalValueCreationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="255">
               <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -189,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NavigationHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="136">
               <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -266,8 +213,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ProjectPublicationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ProjectHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NavigationHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/testng-polls.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalPollHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng-polls.xml" />
       </list>
     </option>
   </component>
@@ -282,8 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -359,6 +304,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -768,7 +715,8 @@
       <workItem from="1589398938983" duration="1765000" />
       <workItem from="1589400782592" duration="1742000" />
       <workItem from="1589402664525" duration="1768000" />
-      <workItem from="1589404499784" duration="1427000" />
+      <workItem from="1589404499784" duration="1429000" />
+      <workItem from="1589406338413" duration="309000" />
     </task>
     <servers />
   </component>
@@ -805,13 +753,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="345519000" />
+    <option name="totallyTimeSpent" value="345830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23560767" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23827292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1284,9 +1232,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalPollModificationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalPollHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2387#2388#0" expanded="true" />
+            <element signature="e#2451#2452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalValueModificationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalValueCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NavigationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="136">
           <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1297,69 +1297,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalValueModificationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalValueCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalPollModificationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalPollHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2387#2388#0" expanded="true" />
-            <element signature="e#2451#2452#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-polls.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="78" lean-forward="true" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="794">
-          <caret line="149" column="27" lean-forward="true" selection-start-line="149" selection-start-column="27" selection-end-line="149" selection-end-column="27" />
+          <caret line="149" column="27" selection-start-line="149" selection-start-column="27" selection-end-line="149" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#submitPollCreation#0;class#PollHelper#0" />
@@ -1369,6 +1310,13 @@
             <element signature="e#5855#5856#0" expanded="true" />
             <element signature="method#submitPollModification#0;class#PollHelper#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-polls.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
         </state>
       </provider>
     </entry>
