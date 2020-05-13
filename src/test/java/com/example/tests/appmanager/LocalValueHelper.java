@@ -110,8 +110,9 @@ public class LocalValueHelper extends HelperBase {
     }
 
 
-    public void submitLocalValueModification() {
+    public void submitLocalValueModification() throws InterruptedException {
         click(By.xpath("//button[@type='submit']"));
+        Thread.sleep(3000);
 
     }
 
