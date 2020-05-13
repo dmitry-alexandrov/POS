@@ -7,9 +7,9 @@ repositories {
     mavenCentral()
 }
 
-configurations {
-    agent
-}
+//configurations {
+//    agent
+//}
 
 dependencies {
     implementation 'org.testng:testng:7.0.0'
@@ -45,9 +45,9 @@ task testPolls(type: Test) {
     }
 }
 
-testPolls.doFirst {
-    jvmArgs "-javaagent:${configurations.agent.singleFile}"
-}
+//testPolls.doFirst {
+//    jvmArgs "-javaagent:${configurations.agent.singleFile}"
+//}
 
 tasks.withType(JavaCompile) {
     options.with {
