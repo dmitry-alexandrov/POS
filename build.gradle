@@ -52,3 +52,4 @@ tasks.withType(JavaCompile) {
         encoding = 'UTF-8'
     }
 }
+
