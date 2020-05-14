@@ -47,7 +47,7 @@ public class NewsHelper extends HelperBase {
 
     public void modifyNewsForm(NewsData newsData) throws InterruptedException {
 
-        type(By.id("news-title_short"), newsData.getTitle());
+        type(By.id("news-title_shor"), newsData.getTitle());
         type(By.id("news-description"), newsData.getDescription());
         //click(By.id("news-level"));
         //new Select(driver.findElement(By.id("news-level"))).selectByVisibleText("Муниципальный");
