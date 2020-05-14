@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.BrowserType;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
 
-@Listeners(MyTestListener.class)
+//@Listeners(MyTestListener.class)
 public class TestBase {
 
     protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
