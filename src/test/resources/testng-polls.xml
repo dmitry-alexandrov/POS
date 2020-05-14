@@ -4,6 +4,11 @@
     <test name="Polls">
         <classes>
             <class name="com.example.tests.test.PollCreationTests"/>
+            <class name="com.example.tests.test.PollModificationTests"/>
+            <class name="com.example.tests.test.LocalPollCreationTests"/>
+            <class name="com.example.tests.test.LocalPollModificationTests"/>
+            <class name="com.example.tests.test.NewsCreationTests"/>
+            <class name="com.example.tests.test.NewsModificationTests"/>
         </classes>
     </test>
 </suite>

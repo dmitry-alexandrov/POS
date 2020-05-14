@@ -1,89 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'base'
-
-repositories {
-    mavenCentral()
-    jcenter()
-}
-
-allure {
-    version = '2.4.1'
-    aspectjweaver = true
-    autoconfigure = true
-
-    resultsGlob = {
-        include '/path/to/project/**/build/**/allure-results'
-        exclude '/path/to/project/some-project/build'
-    }
-
-    resultsDir = file('C:/POS/build/allure-results')
-    reportDir = file('C:/POD/build/allure-results')
-
-    useJUnit4 {
-        version = '2.0-BETA10'
-    }
-
-    useJUnit5 {
-        version = '2.0-BETA10'
-    }
-
-    useTestNG {
-        version = '2.0-BETA10'
-    }
-
-    useCucumberJVM {
-        version = '2.0-BETA10'
-    }
-
-    useCucumber2JVM {
-        version = '2.0-BETA10'
-    }
-
-    useSpock {
-        version = '2.0-BETA10'
-    }
-
-    downloadLink = 'https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.1.1/allure-2.1.1.zip'
-}
-
-dependencies {
-    implementation 'org.testng:testng:7.0.0'
-    implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-3'
-    // compile 'com.applitools:eyes-selenium-java3:3.156.5'
-    implementation 'com.thoughtworks.xstream:xstream:1.4.11.1'
-    implementation 'io.rest-assured:rest-assured:4.2.0'
-    implementation 'org.json:json:20190722'
-    implementation 'ru.stqa.selenium:webdriver-factory:4.4'
-    // implementation 'com.konghq:unirest-java-parent:3.6.00'
-    //agent 'org.aspectj:aspectjweaver:1.8.0'
-    //implementation 'ru.yandex.qatools.allure:allure-testng-adaptor:1.4.0.RC4'
-    //implementation 'ru.yandex.qatools.allure:allure-core:1.4.0.RC4'
-    implementation 'io.qameta.allure:allure-gradle:2.8.1'
-}
-
-task testPolls(type: Test) {
-
-    useTestNG {
-        suites 'src/test/resources/testng-polls.xml'
-    }
-
-    if(project.hasProperty('browser')) {
-        systemProperty 'browser', "${browser}"
-    }
-    if(project.hasProperty('target')) {
-        systemProperty 'target', "${target}"
-    }
-
-    if(project.hasProperty('verifyUI')) {
-        systemProperty 'verifyUI', "${verifyUI}"
-    }
-}
-
-
-/*apply plugin: 'java'
-apply plugin: 'application'
-apply plugin: 'base'
 repositories {
     mavenCentral()
     jcenter()
@@ -135,4 +52,4 @@ tasks.withType(JavaCompile) {
         encoding = 'UTF-8'
     }
 }
-*/
+
