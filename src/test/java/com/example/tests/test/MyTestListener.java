@@ -2,13 +2,13 @@ package com.example.tests.test;
 
 import com.example.tests.appmanager.ApplicationManager;
 //import io.qameta.allure.Attachment;
-import io.qameta.allure.Attachment;
+//import io.qameta.allure.Attachment;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-//import ru.yandex.qatools.allure.annotations.Attachment;
+import ru.yandex.qatools.allure.annotations.Attachment;
 
-//import ru.yandex.qatools.allure.annotations.Attachment;
+
 
 
 public class MyTestListener implements ITestListener {
