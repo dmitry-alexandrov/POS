@@ -65,7 +65,7 @@ public class ApplicationManager {
          driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
      }
         baseUrl = "https://www.google.com/";
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://pos.maxitlab.com/og/login");
         pollHelper = new PollHelper(driver);
         localPollHelper = new LocalPollHelper(driver);
