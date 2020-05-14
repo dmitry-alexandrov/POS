@@ -4,17 +4,6 @@
     <test name="Polls">
         <classes>
             <class name="com.example.tests.test.PollCreationTests"/>
-            <class name="com.example.tests.test.PollModificationTests"/>
-            <class name="com.example.tests.test.LocalPollCreationTests"/>
-            <class name="com.example.tests.test.LocalPollModificationTests"/>
-            <class name="com.example.tests.test.LocalValueCreationTests"/>
-            <class name="com.example.tests.test.LocalValueModificationTests"/>
-            <class name="com.example.tests.test.LocalDiscussionCreationTests"/>
-            <class name="com.example.tests.test.LocalDiscussionModificationTests"/>
-            <class name="com.example.tests.test.ContestCreationTests"/>
-            <class name="com.example.tests.test.ContestModificationTests"/>
-            <class name="com.example.tests.test.NewsCreationTests"/>
-            <class name="com.example.tests.test.NewsModificationTests"/>
         </classes>
     </test>
 </suite>
