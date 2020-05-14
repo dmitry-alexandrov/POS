@@ -1,0 +1,45 @@
+{
+  "uid" : "6affa8fb69a97578",
+  "name" : "testContestModification",
+  "fullName" : "Suite1.testContestModification",
+  "historyId" : "7bb9c95424b09e4c66dace3cdfa6de68",
+  "time" : {
+    "start" : 1589460847513,
+    "stop" : 1589460860137,
+    "duration" : 12624
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite1"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite1"
+  }, {
+    "name" : "testMethod",
+    "value" : "testContestModification"
+  }, {
+    "name" : "package",
+    "value" : "Suite1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6affa8fb69a97578.json",
+  "parameterValues" : [ ]
+}

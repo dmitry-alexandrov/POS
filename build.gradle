@@ -2,25 +2,6 @@
 apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'base'
-//apply plugin: 'io.qameta.allure'
-
-//buildscript {
-//   repositories {
-//      jcenter()
-//       mavenCentral()
-//   }
-//    dependencies {
-//        classpath "io.qameta.allure:allure-gradle:2.13.2"
- //   }
-//}
-
-//plugins {
-//    id 'io.qameta.allure'
-//}
-
-
-
-
 
 repositories {
     mavenCentral()
@@ -38,13 +19,11 @@ dependencies {
     implementation 'io.rest-assured:rest-assured:4.2.0'
     implementation 'org.json:json:20190722'
     implementation 'ru.stqa.selenium:webdriver-factory:4.4'
- //   implementation 'com.konghq:unirest-java-parent:3.6.00'
-   implementation 'agent(org.aspectj:aspectjweaver:1.8.0)'
-   implementation 'ru.yandex.qatools.allure:allure-testng-adaptor:1.4.0.RC4'
-   implementation 'io.qameta.allure:allure-gradle:2.13.2'
-    
+ // implementation 'com.konghq:unirest-java-parent:3.6.00'
+            agent 'org.aspectj:aspectjweaver:1.8.0'
+    implementation 'ru.yandex.qatools.allure:allure-testng-adaptor:1.4.0.RC4'
+    implementation 'ru.yandex.qatools.allure:allure-core:1.4.0.RC4'
 }
-
 
 task testPolls(type: Test) {
 

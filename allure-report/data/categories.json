@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#news\\-title_shor\"}\n  (Session info: chrome=81.0.4044.138)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '4.0.0-alpha-3', revision: '8c567de6dc'\nSystem info: host: 'LENOVO-ПК', ip: '192.168.0.218', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12.0.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\\Users\\Lenovo\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53497}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: a564f982094562da9d83437000080c43\n*** Element info: {Using=id, value=news-title_shor}",
+      "children" : [ {
+        "name" : "testNewsModification",
+        "uid" : "b71c876502cad290",
+        "parentUid" : "80f7c1c6641689d93e7a25275e63fa12",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589460866233,
+          "stop" : 1589460897502,
+          "duration" : 31269
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "80f7c1c6641689d93e7a25275e63fa12"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

@@ -1,0 +1,45 @@
+{
+  "uid" : "e0f550dac62eaa92",
+  "name" : "testNewsCreation",
+  "fullName" : "Suite1.testNewsCreation",
+  "historyId" : "ee5dc3790b120fd284a2aebcd972aee5",
+  "time" : {
+    "start" : 1589460860139,
+    "stop" : 1589460866231,
+    "duration" : 6092
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite1"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite1"
+  }, {
+    "name" : "testMethod",
+    "value" : "testNewsCreation"
+  }, {
+    "name" : "package",
+    "value" : "Suite1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e0f550dac62eaa92.json",
+  "parameterValues" : [ ]
+}

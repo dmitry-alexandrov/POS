@@ -1,0 +1,45 @@
+{
+  "uid" : "8068e2509f95d0a4",
+  "name" : "testLocalDiscussionCreation",
+  "fullName" : "Suite1.testLocalDiscussionCreation",
+  "historyId" : "aa9b1da6a5ab8720ccbd68a90f0e0b4b",
+  "time" : {
+    "start" : 1589460829047,
+    "stop" : 1589460837816,
+    "duration" : 8769
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite1"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite1"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLocalDiscussionCreation"
+  }, {
+    "name" : "package",
+    "value" : "Suite1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8068e2509f95d0a4.json",
+  "parameterValues" : [ ]
+}

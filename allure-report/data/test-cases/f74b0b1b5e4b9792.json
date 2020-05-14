@@ -1,0 +1,45 @@
+{
+  "uid" : "f74b0b1b5e4b9792",
+  "name" : "testLocalPollCreation",
+  "fullName" : "Suite1.testLocalPollCreation",
+  "historyId" : "1a3c2601eaeb83edee59f4bdda304523",
+  "time" : {
+    "start" : 1589460794057,
+    "stop" : 1589460803512,
+    "duration" : 9455
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite1"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite1"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLocalPollCreation"
+  }, {
+    "name" : "package",
+    "value" : "Suite1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f74b0b1b5e4b9792.json",
+  "parameterValues" : [ ]
+}

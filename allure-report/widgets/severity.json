@@ -1,0 +1,121 @@
+[ {
+  "uid" : "f74b0b1b5e4b9792",
+  "name" : "testLocalPollCreation",
+  "time" : {
+    "start" : 1589460794057,
+    "stop" : 1589460803512,
+    "duration" : 9455
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6affa8fb69a97578",
+  "name" : "testContestModification",
+  "time" : {
+    "start" : 1589460847513,
+    "stop" : 1589460860137,
+    "duration" : 12624
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53e469f98fbbfb9d",
+  "name" : "testLocalValueModification",
+  "time" : {
+    "start" : 1589460821165,
+    "stop" : 1589460829044,
+    "duration" : 7879
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "137915d326f2897e",
+  "name" : "testPollModification",
+  "time" : {
+    "start" : 1589460782071,
+    "stop" : 1589460794054,
+    "duration" : 11983
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82100dd94f5d6786",
+  "name" : "testContestCreation",
+  "time" : {
+    "start" : 1589460842018,
+    "stop" : 1589460847511,
+    "duration" : 5493
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b71c876502cad290",
+  "name" : "testNewsModification",
+  "time" : {
+    "start" : 1589460866233,
+    "stop" : 1589460897502,
+    "duration" : 31269
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "827e3f254af8dbae",
+  "name" : "testLocalDiscussionModification",
+  "time" : {
+    "start" : 1589460837826,
+    "stop" : 1589460842016,
+    "duration" : 4190
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0f550dac62eaa92",
+  "name" : "testNewsCreation",
+  "time" : {
+    "start" : 1589460860139,
+    "stop" : 1589460866231,
+    "duration" : 6092
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d387ae910330e5f",
+  "name" : "testPollCreation",
+  "time" : {
+    "start" : 1589460765260,
+    "stop" : 1589460781685,
+    "duration" : 16425
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f29ec7a6e65a8dab",
+  "name" : "testLocalPollModification",
+  "time" : {
+    "start" : 1589460803514,
+    "stop" : 1589460811573,
+    "duration" : 8059
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8068e2509f95d0a4",
+  "name" : "testLocalDiscussionCreation",
+  "time" : {
+    "start" : 1589460829047,
+    "stop" : 1589460837816,
+    "duration" : 8769
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62f4f508e3e597cf",
+  "name" : "testLocalValueCreation",
+  "time" : {
+    "start" : 1589460811575,
+    "stop" : 1589460821163,
+    "duration" : 9588
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
