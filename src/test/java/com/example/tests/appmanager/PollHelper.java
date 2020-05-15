@@ -136,11 +136,12 @@ public class PollHelper extends HelperBase {
         Thread.sleep(2000);
     }
 
-    public void checkElements() {
+    public void checkElements() throws InterruptedException {
 
         driver.findElement(By.tagName("h1"));
         driver.findElement(By.xpath("/html/body/main/div/div/div/div/div/p/a[1]"));
         driver.findElement(By.className("poll-view"));
+        Thread.sleep(2000);
 
     }
 

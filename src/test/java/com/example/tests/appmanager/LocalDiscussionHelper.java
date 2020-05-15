@@ -117,7 +117,7 @@ public class LocalDiscussionHelper extends HelperBase {
 
     public void publishLocalDiscussion() throws InterruptedException {
         click(By.linkText("Опубликовать"));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
     }
 
 }

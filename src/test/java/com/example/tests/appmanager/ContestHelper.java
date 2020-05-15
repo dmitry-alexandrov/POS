@@ -22,7 +22,7 @@ public class ContestHelper extends HelperBase{
 
     public void submitContestCreation() throws InterruptedException {
         click(By.xpath("//button[@type='submit']"));
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
 
     public void fillContestForm(ContestData contestData) throws InterruptedException {
