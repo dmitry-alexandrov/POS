@@ -10,7 +10,7 @@ public class ContestModificationTests extends TestBase {
         app.getNavigationHelper().gotoContestListPage();
         app.getContestHelper().selectContest();
         app.getContestHelper().initContestModification();
-        app.getContestHelper().modifyContestForm(new ContestData("Конкурс тест", "Муниципальный", "Ярославская", "Ярославль", "2", "2", "Туризм"));
+        app.getContestHelper().modifyContestForm(new ContestData("Конкурс тест ред.", "Муниципальный", "Ярославская", "Ярославль", "2", "2", "Туризм"));
         app.getContestHelper().submitContestModification();
     }
 
