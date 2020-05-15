@@ -55,9 +55,9 @@ public class ContestHelper extends HelperBase{
 
     public void deleteContest() throws InterruptedException {
         click(By.linkText("Удалить"));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         assertTrue(closeAlertAndGetItsText().matches("^Вы действительно хотите удалить этот элемент[\\s\\S]$"));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
     }
 
     public String closeAlertAndGetItsText() {
