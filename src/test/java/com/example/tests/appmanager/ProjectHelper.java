@@ -52,7 +52,7 @@ public class ProjectHelper extends HelperBase {
     }
 
     public void initProjectCreation() {
-        click(By.linkText("Конкурс тест"));
+        click(By.linkText("Конкурс тест ред."));
         click(By.linkText("Добавить проект"));
     }
 
