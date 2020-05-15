@@ -19,7 +19,6 @@
             <class name="com.example.tests.test.LocalDiscussionCreationTests"/>
             <class name="com.example.tests.test.LocalDiscussionModificationTests"/>
             <class name="com.example.tests.test.LocalDiscussionPublicationTests"/>
-            <class name="com.example.tests.test.ContestDeletionTests"/>
             <class name="com.example.tests.test.ContestCreationTests"/>
             <class name="com.example.tests.test.ContestModificationTests"/>
             <class name="com.example.tests.test.ProjectCreationTests"/>
