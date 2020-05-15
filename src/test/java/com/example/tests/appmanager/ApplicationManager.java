@@ -51,8 +51,8 @@ public class ApplicationManager {
              driver = new FirefoxDriver();
 
          } else if (browser.equals(BrowserType.CHROME)) {
-             System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-             //"C:\\Tools\\Tools\\chromedriver.exe"
+             System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
+             //"/usr/local/bin/chromedriver"
              driver = new ChromeDriver();
          } else if (browser.equals(BrowserType.IE)) {
              System.setProperty("webdriver.ie.driver", "C:\\Tools\\Tools\\IEDriverServer.exe");
@@ -65,7 +65,7 @@ public class ApplicationManager {
          driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
      }
         baseUrl = "https://www.google.com/";
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://pos.maxitlab.com/og/login");
         pollHelper = new PollHelper(driver);
         localPollHelper = new LocalPollHelper(driver);
