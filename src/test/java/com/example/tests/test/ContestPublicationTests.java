@@ -7,10 +7,6 @@ public class ContestPublicationTests  extends TestBase {
 
     @Test
     public void testContestPublication() throws InterruptedException {
-        app.getNavigationHelper().gotoContestListPage();
-        app.getContestHelper().initContestCreation();
-        app.getContestHelper().fillContestForm(new ContestData("Конкурс тест", "Муниципальный", "Белгородская", "Вязовское", "1", "1", "Пожарная"));
-        app.getContestHelper().submitContestCreation();
 
         app.getNavigationHelper().gotoContestListPage();
         app.getContestHelper().selectContest();

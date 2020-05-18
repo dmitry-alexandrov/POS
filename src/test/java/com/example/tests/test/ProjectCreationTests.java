@@ -20,7 +20,7 @@ public class ProjectCreationTests extends TestBase {
         //app.getPollHelper().waitPollCreation();
         app.getNavigationHelper().gotoContestListPage();
         app.getProjectHelper().initProjectCreation();
-        app.getProjectHelper().fillProjectForm(new ProjectData("Проект 2", "Описание тестового проекта 1", "1000000", "Пожарная безопасность"));
+        app.getProjectHelper().fillProjectForm(new ProjectData("Проект 2", "Описание тестового проекта 2", "1000000", "Пожарная безопасность"));
         app.getProjectHelper().submitProjectCreation();
     }
 
