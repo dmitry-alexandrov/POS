@@ -76,7 +76,7 @@ public class ContestHelper extends HelperBase{
     }
 
     public void selectContest() {
-        click(By.linkText("Конкурс тест"));
+        click(By.linkText("Конкурс тест 2"));
         acceptNextAlert = true;
     }
 
