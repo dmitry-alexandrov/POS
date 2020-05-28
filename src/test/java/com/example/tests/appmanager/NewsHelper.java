@@ -37,8 +37,12 @@ public class NewsHelper extends HelperBase {
         click(By.xpath("//span[@id='select2-news-municipality_id-container']/span"));
         type(By.xpath("//input[@type='search']"), newsData.getMunicipality());
         driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
+       // driver.findElement(By.id("news-published_at")).click();
+       // driver.findElement(By.xpath("//tr[5]/td[6]")).click();
+
         driver.findElement(By.id("news-published_at")).click();
-        driver.findElement(By.xpath("//tr[5]/td[6]")).click();
+        driver.findElement(By.xpath("//th[3]")).click();
+        driver.findElement(By.xpath("//tr[6]/td[3]")).click();
 
 }
     public void initNewsCreation() {

@@ -35,10 +35,17 @@ public class LocalDiscussionHelper extends HelperBase {
         click(By.xpath("//span[@id='select2-discussion-municipality_id-container']/span"));
         type(By.xpath("//input[@type='search']"), localDiscussionData.getMunicipality());
         driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
+        //driver.findElement(By.id("discussion-starts_at")).click();
+       // driver.findElement(By.xpath("//tr[5]/td[6]")).click();
+       // driver.findElement(By.id("discussion-ends_at")).click();
+       // driver.findElement(By.xpath("//tr[6]/td[7]")).click();
+
         driver.findElement(By.id("discussion-starts_at")).click();
-        driver.findElement(By.xpath("//tr[5]/td[6]")).click();
+        driver.findElement(By.xpath("//th[3]")).click();
+        driver.findElement(By.xpath("//tr[6]/td[3]")).click();
         driver.findElement(By.id("discussion-ends_at")).click();
-        driver.findElement(By.xpath("//tr[6]/td[7]")).click();
+        driver.findElement(By.xpath("//tr[5]/td[5]")).click();
+
         type(By.id("document-title"), localDiscussionData.getAttachment_name());
         type(By.id("document-description"), localDiscussionData.getAttachment_description_1());
         attach(By.id("document-file"), localDiscussionData.getAttachment_1());

@@ -12,6 +12,7 @@ configurations {
 }
 
 dependencies {
+    implementation 'org.slf4j:slf4j-parent:2.0.0-alpha1'
     implementation 'org.testng:testng:7.0.0'
     implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-3'
     // compile 'com.applitools:eyes-selenium-java3:3.156.5'

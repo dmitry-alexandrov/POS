@@ -43,10 +43,17 @@ public class ProjectHelper extends HelperBase {
 
 
         Thread.sleep(1000);
+      //  driver.findElement(By.id("project-starts_at")).click();
+      //  driver.findElement(By.xpath("//tr[6]/td")).click();
+      //  driver.findElement(By.id("project-ends_at")).click();
+      //  driver.findElement(By.xpath("//tr[6]/td")).click();
+
         driver.findElement(By.id("project-starts_at")).click();
-        driver.findElement(By.xpath("//tr[6]/td")).click();
+        driver.findElement(By.xpath("//th[3]")).click();
+        driver.findElement(By.xpath("//tr[6]/td[3]")).click();
         driver.findElement(By.id("project-ends_at")).click();
-        driver.findElement(By.xpath("//tr[6]/td")).click();
+        driver.findElement(By.xpath("//tr[5]/td[5]")).click();
+
         type(By.id("project-budget"), projectData.getProjectBudget());
 
     }

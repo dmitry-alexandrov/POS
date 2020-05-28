@@ -36,11 +36,18 @@ public class LocalPollHelper extends HelperBase {
         click(By.xpath("//span[@id='select2-poll-municipality_id-container']/span"));
         type(By.xpath("//input[@type='search']"), localPollData.getMunicipality());
         driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
+       // driver.findElement(By.id("poll-form_date_from")).click();
+       // driver.findElement(By.xpath("//th[3]")).click();
+       // driver.findElement(By.xpath("//tr[2]/td")).click();
+       // driver.findElement(By.id("poll-form_date_to")).click();
+       // driver.findElement(By.xpath("//tr[6]/td")).click();
+
         driver.findElement(By.id("poll-form_date_from")).click();
         driver.findElement(By.xpath("//th[3]")).click();
-        driver.findElement(By.xpath("//tr[2]/td")).click();
+        driver.findElement(By.xpath("//tr[6]/td[3]")).click();
         driver.findElement(By.id("poll-form_date_to")).click();
-        driver.findElement(By.xpath("//tr[6]/td")).click();
+        driver.findElement(By.xpath("//tr[5]/td[5]")).click();
+
         type(By.id("attachment-0-title"), localPollData.getAttachment_name());
         type(By.id("attachment-0-description"), localPollData.getAttachment_description_1());
         attach(By.id("attachment-0-file"), localPollData.getAttachment_1());

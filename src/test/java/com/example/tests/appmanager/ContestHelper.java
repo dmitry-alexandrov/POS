@@ -38,10 +38,17 @@ public class ContestHelper extends HelperBase{
         click(By.xpath("//span[@id='select2-projectcontest-municipality_id-container']/span"));
         type(By.xpath("(//input[@type='search'])[2]"), contestData.getMunicipality());
         driver.findElement(By.xpath("(//input[@type='search'])[2]")).sendKeys(Keys.ENTER);
+       // driver.findElement(By.id("projectcontest-starts_at")).click();
+       // driver.findElement(By.xpath("//tr[5]/td[6]")).click();
+       // driver.findElement(By.id("projectcontest-ends_at")).click();
+       // driver.findElement(By.xpath("//tr[6]/td[7]")).click();
+
         driver.findElement(By.id("projectcontest-starts_at")).click();
-        driver.findElement(By.xpath("//tr[5]/td[6]")).click();
+        driver.findElement(By.xpath("//th[3]")).click();
+        driver.findElement(By.xpath("//tr[6]/td[3]")).click();
         driver.findElement(By.id("projectcontest-ends_at")).click();
-        driver.findElement(By.xpath("//tr[6]/td[7]")).click();
+        driver.findElement(By.xpath("//tr[5]/td[5]")).click();
+
         type(By.id("projectcontest-choices_amount"), contestData.getChoicesAmount());
         type(By.id("projectcontest-winners_amount"), contestData.getWinnersAmount());
         type(By.xpath("//input[@type='search']"), contestData.getSector());

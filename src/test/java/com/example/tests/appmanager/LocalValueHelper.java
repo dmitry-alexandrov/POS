@@ -38,10 +38,17 @@ public class LocalValueHelper extends HelperBase {
         type(By.id("attachment-0-title"), localValueData.getAttachment_name());
         type(By.id("attachment-0-description"), localValueData.getAttachment_description_1());
         attach(By.id("attachment-0-file"), localValueData.getAttachment_1());
+       // driver.findElement(By.id("poll-form_date_from")).click();
+       // driver.findElement(By.xpath("//tr[5]/td[6]")).click();
+       // driver.findElement(By.id("poll-form_date_to")).click();
+       // driver.findElement(By.xpath("//tr[6]/td[7]")).click();
+
         driver.findElement(By.id("poll-form_date_from")).click();
-        driver.findElement(By.xpath("//tr[5]/td[6]")).click();
+        driver.findElement(By.xpath("//th[3]")).click();
+        driver.findElement(By.xpath("//tr[6]/td[3]")).click();
         driver.findElement(By.id("poll-form_date_to")).click();
-        driver.findElement(By.xpath("//tr[6]/td[7]")).click();
+        driver.findElement(By.xpath("//tr[5]/td[5]")).click();
+
         type(By.id("attachment-0-title"), localValueData.getAttachment_name());
         type(By.id("attachment-0-description"), localValueData.getAttachment_description_1());
         attach(By.id("attachment-0-file"), localValueData.getAttachment_1());
@@ -79,10 +86,17 @@ public class LocalValueHelper extends HelperBase {
         type(By.id("attachment-0-title"), localValueData.getAttachment_name());
         type(By.id("attachment-0-description"), localValueData.getAttachment_description_1());
         attach(By.id("attachment-0-file"), localValueData.getAttachment_1());
+      //  driver.findElement(By.id("poll-form_date_from")).click();
+      //  driver.findElement(By.xpath("//tr[5]/td[6]")).click();
+       // driver.findElement(By.id("poll-form_date_to")).click();
+      //  driver.findElement(By.xpath("//tr[6]/td[7]")).click();
+
         driver.findElement(By.id("poll-form_date_from")).click();
-        driver.findElement(By.xpath("//tr[5]/td[6]")).click();
+        driver.findElement(By.xpath("//th[3]")).click();
+        driver.findElement(By.xpath("//tr[6]/td[3]")).click();
         driver.findElement(By.id("poll-form_date_to")).click();
-        driver.findElement(By.xpath("//tr[6]/td[7]")).click();
+        driver.findElement(By.xpath("//tr[5]/td[5]")).click();
+
         type(By.id("attachment-0-title"), localValueData.getAttachment_name());
         type(By.id("attachment-0-description"), localValueData.getAttachment_description_1());
         attach(By.id("attachment-0-file"), localValueData.getAttachment_1());
