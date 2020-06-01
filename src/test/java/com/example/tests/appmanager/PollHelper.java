@@ -5,8 +5,14 @@ import com.example.tests.model.PollData;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import java.time.Duration;
+
 import static org.testng.Assert.assertTrue;
 
 public class PollHelper extends HelperBase {
@@ -19,7 +25,7 @@ public class PollHelper extends HelperBase {
 
     public void submitPollCreation() throws InterruptedException {
       click(By.xpath("//button[@type='submit']"));
-      Thread.sleep(2000);
+      //Thread.sleep(2000);
     }
 
     public void fillPollForm(PollData pollData) {
@@ -101,7 +107,13 @@ public class PollHelper extends HelperBase {
     }
 
     public void initPollCreation() throws InterruptedException {
-      Thread.sleep(3000);
+     // Thread.sleep(3000);
+
+     //   WebElement element = driver.findElement(By.xpath("/html/body/main/div/div/div/div/div/p/a"));
+
+     //   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+     //   wait.until(ExpectedConditions.visibilityOf(element));
+
     click(By.xpath("/html/body/main/div/div/div/div/div/p/a"));
   }
 
@@ -137,9 +149,15 @@ public class PollHelper extends HelperBase {
     }
 
     public void submitPollModification() throws InterruptedException {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         click(By.xpath("//button[@type='submit']"));
-        Thread.sleep(2000);
+       // Thread.sleep(2000);
+
+        WebElement element = driver.findElement(By.xpath("//button[@type='submit']"));
+
+         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+         wait.until(ExpectedConditions.invisibilityOf(element));
+
     }
 
     public void checkElements() throws InterruptedException {
@@ -147,14 +165,14 @@ public class PollHelper extends HelperBase {
         driver.findElement(By.tagName("h1"));
         driver.findElement(By.xpath("/html/body/main/div/div/div/div/div/p/a[1]"));
         driver.findElement(By.className("poll-view"));
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
 
     }
 
     public void publishPoll() throws InterruptedException{
 
         click(By.linkText("Опубликовать"));
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
 
     }
 
