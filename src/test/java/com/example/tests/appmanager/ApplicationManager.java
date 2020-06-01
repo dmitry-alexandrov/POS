@@ -7,19 +7,16 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import static org.testng.Assert.fail;
 
 public class ApplicationManager {
+
     private final Properties properties;
     public static WebDriver driver;
     private SessionHelper sessionHelper;
@@ -35,35 +32,45 @@ public class ApplicationManager {
     public StringBuffer verificationErrors = new StringBuffer();
     private String browser;
 
-    public ApplicationManager(String browser) {
-        this.browser = browser;
-        properties = new Properties();
+        public ApplicationManager(String browser) {
+
+            this.browser = browser;
+            properties = new Properties();
+
     }
 
-    public void init() throws IOException {
+    public void init() throws IOException
+    {
         System.out.println("inside init");
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
-     if ("".equals(properties.getProperty("selenium.server"))) {
 
-         if (browser.equals(BrowserType.FIREFOX)) {
-             //System.setProperty("webdriver.firefox.driver", "/usr/local/bin/geckodriver");
-             driver = new FirefoxDriver();
+            if ("".equals(properties.getProperty("selenium.server"))) {
 
-         } else if (browser.equals(BrowserType.CHROME)) {
-             System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-             //"/usr/local/bin/chromedriver" "C:\\Tools\\Tools\\chromedriver.exe"
-             driver = new ChromeDriver();
-         } else if (browser.equals(BrowserType.IE)) {
-             System.setProperty("webdriver.ie.driver", "C:\\Tools\\Tools\\IEDriverServer.exe");
-             driver = new InternetExplorerDriver();
-         }
-     } else {
+                if (browser.equals(BrowserType.FIREFOX)) {
+                    //System.setProperty("webdriver.firefox.driver", "/usr/local/bin/geckodriver");
+                    driver = new FirefoxDriver();
 
-         DesiredCapabilities capabilities = new DesiredCapabilities();
-         capabilities.setBrowserName(browser);
-         driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
-     }
+                } else if (browser.equals(BrowserType.CHROME)) {
+
+                    System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
+                    //"/usr/local/bin/chromedriver" "C:\\Tools\\Tools\\chromedriver.exe"
+                    driver = new ChromeDriver();
+
+                } else if (browser.equals(BrowserType.IE)) {
+
+                    System.setProperty("webdriver.ie.driver", "C:\\Tools\\Tools\\IEDriverServer.exe");
+                    driver = new InternetExplorerDriver();
+                }
+
+            } else {
+
+                DesiredCapabilities capabilities = new DesiredCapabilities();
+                capabilities.setBrowserName(browser);
+                driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+
+            }
+
         baseUrl = "https://www.google.com/";
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://pos.maxitlab.com/og/login");
@@ -77,51 +84,90 @@ public class ApplicationManager {
         navigationHelper = new NavigationHelper(driver);
         sessionHelper = new SessionHelper(driver);
         sessionHelper.login("admin", "APwM$25Ek4pEfXu1N");
+        //Resize the current window to the given dimension
         Dimension d = new Dimension(1920,1080);
-//Resize the current window to the given dimension
         driver.manage().window().setSize(d);
+
     }
 
 
 
     public void stop() {
-         driver.quit();
-        String verificationErrorString = verificationErrors.toString();
-        if (!"".equals(verificationErrorString)) {
-          fail(verificationErrorString);
-        }
+
+            driver.quit();
+            String verificationErrorString = verificationErrors.toString();
+
+                if (!"".equals(verificationErrorString)) {
+
+                    fail(verificationErrorString);
+
+                }
     }
 
     public boolean isElementPresent(By by) {
-      try {
-        driver.findElement(by);
-        return true;
-      } catch (NoSuchElementException e) {
-        return false;
-      }
+            try {
+
+                driver.findElement(by);
+                return true;
+
+            } catch (NoSuchElementException e) {
+
+                return false;
+
+            }
     }
 
     public PollHelper getPollHelper() {
+
         return pollHelper;
+
     }
 
-    public LocalPollHelper getLocalPollHelper() { return localPollHelper; }
+    public LocalPollHelper getLocalPollHelper() {
 
-    public LocalValueHelper getLocalValueHelper() { return localValueHelper; }
+            return localPollHelper;
 
-    public LocalDiscussionHelper getLocalDiscussionHelper() { return localDiscussionHelper; }
+        }
 
-    public ContestHelper getContestHelper() { return  contestHelper; }
+    public LocalValueHelper getLocalValueHelper() {
 
-    public ProjectHelper getProjectHelper() { return projectHelper; }
+            return localValueHelper;
 
-    public NewsHelper getNewsHelper() { return  newsHelper; }
+        }
+
+    public LocalDiscussionHelper getLocalDiscussionHelper() {
+
+            return localDiscussionHelper;
+
+        }
+
+    public ContestHelper getContestHelper() {
+
+            return  contestHelper;
+
+        }
+
+    public ProjectHelper getProjectHelper() {
+
+            return projectHelper;
+
+        }
+
+    public NewsHelper getNewsHelper() {
+
+            return  newsHelper;
+
+        }
 
     public NavigationHelper getNavigationHelper() {
-        return navigationHelper;
+
+            return navigationHelper;
+
     }
 
     public byte[] takeScreenshot() {
-        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
+            return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
     }
 }
