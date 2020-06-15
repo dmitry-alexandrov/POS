@@ -93,7 +93,7 @@ public class LocalDiscussionHelper extends HelperBase {
 
     public void selectLocalDiscussion() {
 
-        click(By.linkText("Обсуждение документа МЗ тест"));
+        click(By.linkText("1 Обсуждение документа МЗ тест"));
         acceptNextAlert = true;
         //Thread.sleep(1000);
     }

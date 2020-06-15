@@ -27,7 +27,10 @@ public class NewsHelper extends HelperBase {
         type(By.id("news-title_short"), newsData.getTitle());
         type(By.id("news-description"), newsData.getDescription());
         click(By.id("news-level"));
-        new Select(driver.findElement(By.id("news-level"))).selectByVisibleText("Муниципальный");
+
+        select(By.id("news-level"), newsData.getLevel());
+
+        //new Select(driver.findElement(By.id("news-level"))).selectByVisibleText("Муниципальный");
         //driver.findElement(By.xpath("//option[@value='30']")).click();
         click(By.xpath("//span[@id='select2-news-region_id-container']/span"));
         type(By.xpath("//input[@type='search']"), newsData.getRegion());

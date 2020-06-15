@@ -28,6 +28,7 @@ public class ApplicationManager {
     private ContestHelper contestHelper;
     private ProjectHelper projectHelper;
     private NewsHelper newsHelper;
+    private EntityFilterHelper entityFilterHelper;
     public String baseUrl;
     public StringBuffer verificationErrors = new StringBuffer();
     private String browser;
@@ -53,7 +54,7 @@ public class ApplicationManager {
 
                 } else if (browser.equals(BrowserType.CHROME)) {
 
-                    System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
+                    System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
                     //"/usr/local/bin/chromedriver" "C:\\Tools\\Tools\\chromedriver.exe"
                     driver = new ChromeDriver();
 
@@ -82,6 +83,7 @@ public class ApplicationManager {
         projectHelper = new ProjectHelper(driver);
         newsHelper = new NewsHelper(driver);
         navigationHelper = new NavigationHelper(driver);
+        entityFilterHelper = new EntityFilterHelper(driver);
         sessionHelper = new SessionHelper(driver);
         sessionHelper.login("admin", "APwM$25Ek4pEfXu1N");
         //Resize the current window to the given dimension
@@ -104,18 +106,18 @@ public class ApplicationManager {
                 }
     }
 
-    public boolean isElementPresent(By by) {
-            try {
+  // public boolean isElementPresent(By by) {
+  //          try {
+//
+  //              driver.findElement(by);
+  //              return true;
+//
+ //           } catch (NoSuchElementException e) {
+//
+ //               return false;
 
-                driver.findElement(by);
-                return true;
-
-            } catch (NoSuchElementException e) {
-
-                return false;
-
-            }
-    }
+  //          }
+ //   }
 
     public PollHelper getPollHelper() {
 
@@ -162,6 +164,12 @@ public class ApplicationManager {
     public NavigationHelper getNavigationHelper() {
 
             return navigationHelper;
+
+    }
+
+    public EntityFilterHelper getEntityFilterHelper() {
+
+            return entityFilterHelper;
 
     }
 

@@ -7,6 +7,7 @@ public class ContestDeletionTests extends TestBase {
 
     @Test
     public void testContestDeletion() throws Exception {
+
         app.getNavigationHelper().gotoContestListPage();
         app.getContestHelper().initContestCreation();
         app.getContestHelper().fillContestForm(new ContestData("Конкурс тест", "Муниципальный", "Московская", "Балашиха", "1", "1", "Пожарная"));
@@ -15,6 +16,7 @@ public class ContestDeletionTests extends TestBase {
         app.getNavigationHelper().gotoContestListPage();
         app.getContestHelper().selectContest();
         app.getContestHelper().deleteContest();
+
     }
 
 }

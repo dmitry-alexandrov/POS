@@ -11,6 +11,7 @@ public class ContestPublicationTests  extends TestBase {
         app.getNavigationHelper().gotoContestListPage();
         app.getContestHelper().selectContest();
         app.getContestHelper().publishContest();
+
     }
 
 

@@ -2,48 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6269bfd0-19fe-4ade-bbfb-590524ce0f3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/EntityFilterHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/model/EntityFilterData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/EntityFilterTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ContestHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ContestHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/HelperBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalDiscussionHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalDiscussionHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalPollHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalPollHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalValueHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/LocalValueHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/NewsHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/NewsHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/PollHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/PollHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ProjectHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/appmanager/ProjectHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/model/PollData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/model/PollData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/model/NewsData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/model/NewsData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ContestCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ContestCreationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ContestDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ContestDeletionTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ContestModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ContestModificationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ContestPublicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ContestPublicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionCreationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionDeletionTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionModificationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionPublicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalDiscussionPublicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollDeletionTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollModificationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollPublicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalPollPublicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalValueDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalValueDeletionTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalValuePublicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/LocalValuePublicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/NewsCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/NewsCreationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/NewsDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/NewsDeletionTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/NewsModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/NewsModificationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/NewsPublicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/NewsPublicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollDeletionTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollModificationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollPublicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/PollPublicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ProjectCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ProjectCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ProjectDeletionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/example/tests/test/ProjectDeletionTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/resources/testng-polls.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/testng-polls.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ContestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ContestHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalDiscussionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalDiscussionHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalPollHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalPollHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalValueHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalValueHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ProjectHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ProjectHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/model/PollData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/model/PollData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollDeletionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollModificationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollPublicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollPublicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/model/NewsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/model/NewsData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestDeletionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestModificationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestPublicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestPublicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionDeletionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionModificationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionPublicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionPublicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsDeletionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsModificationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsPublicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsPublicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-polls.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-polls.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -85,113 +85,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ContestHelper.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="45" column="70" lean-forward="true" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
+            <state relative-caret-position="459">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#closeAlertAndGetItsText#0;class#ContestHelper#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/EntityFilterHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1802">
+              <caret line="111" column="99" selection-start-line="111" selection-start-column="99" selection-end-line="111" selection-end-column="99" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1326">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/EntityFilterData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/testng-polls.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/EntityFilterTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollDeletionTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="173" selection-start-line="13" selection-start-column="173" selection-end-line="13" selection-end-column="173" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/PollData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#submitPollCreation#0;class#PollHelper#0" />
-                <element signature="method#initPollCreation#0;class#PollHelper#0" />
-                <element signature="method#submitPollModification#0;class#PollHelper#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalPollHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalValueHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="49" column="62" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollModificationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsPublicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollPublicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="312">
+              <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -215,57 +169,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/model/ContestData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/model/NewsData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsCreationTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/string.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/TestRemoteScripts.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/local.properties" />
-        <option value="$PROJECT_DIR$/src/test/resources/remote.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/model/ProjectData.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/poll.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests_2.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalPollCreationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalValueModificationTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionModificationTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsModificationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ProjectModificationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ProjectPublicationTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/src/test/resources/allure.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalPollModificationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/MyTestListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionDeletionTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionPublicationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalPollDeletionTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalPollPublicationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalValueDeletionTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalValuePublicationTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsDeletionTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsPublicationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ProjectDeletionTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestDeletionTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestModificationTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestCreationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ProjectCreationTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestPublicationTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalPollHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalDiscussionHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ProjectHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalValueHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/model/PollData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollModificationTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollDeletionTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollPublicationTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ContestHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionCreationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionDeletionTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionModificationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionPublicationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalDiscussionHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollPublicationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollModificationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestCreationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestDeletionTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestModificationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestPublicationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollListFilterAndSearchTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NavigationHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollFilterHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/PollFilterTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/model/NewsData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsCreationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsPublicationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsModificationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsDeletionTests.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-polls.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/model/EntityFilterData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/test/EntityFilterTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/EntityFilterHelper.java" />
       </list>
     </option>
   </component>
@@ -347,16 +301,12 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="POS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -393,7 +343,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/POS/src/test/resources/testng-polls.xml">
+  <component name="RunManager" selected="TestNG.EntityFilterTests">
     <configuration name="C:/POS/src/test/resources/testng-polls.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POS.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-polls.xml" />
@@ -431,7 +381,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalValueCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EntityFilterTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POS.test" />
       <extension name="coverage">
         <pattern>
@@ -440,7 +390,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.tests.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.test.LocalValueCreationTests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.test.EntityFilterTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -448,7 +398,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalValueModificationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="NewsCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POS.test" />
       <extension name="coverage">
         <pattern>
@@ -457,7 +407,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.tests.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.tests.test.LocalValueModificationTests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tests.test.NewsCreationTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -485,18 +435,18 @@
     <list>
       <item itemvalue="TestNG.C:/POS/src/test/resources/testng.xml" />
       <item itemvalue="TestNG.C:/POS/src/test/resources/testng-polls.xml" />
-      <item itemvalue="TestNG.LocalValueCreationTests" />
-      <item itemvalue="TestNG.LocalValueModificationTests" />
       <item itemvalue="TestNG.PollCreationTests" />
       <item itemvalue="TestNG.ContestCreationTests" />
+      <item itemvalue="TestNG.EntityFilterTests" />
+      <item itemvalue="TestNG.NewsCreationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.EntityFilterTests" />
+        <item itemvalue="TestNG.NewsCreationTests" />
         <item itemvalue="TestNG.C:/POS/src/test/resources/testng-polls.xml" />
         <item itemvalue="TestNG.ContestCreationTests" />
         <item itemvalue="TestNG.PollCreationTests" />
-        <item itemvalue="TestNG.LocalValueModificationTests" />
-        <item itemvalue="TestNG.LocalValueCreationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -823,50 +773,100 @@
       <workItem from="1590669411095" duration="599000" />
       <workItem from="1590674311219" duration="1647000" />
       <workItem from="1590676589733" duration="1028000" />
-      <workItem from="1590678421771" duration="753000" />
+      <workItem from="1590678421771" duration="1492000" />
+      <workItem from="1590769111326" duration="7000" />
+      <workItem from="1590770126043" duration="682000" />
+      <workItem from="1591008264314" duration="595000" />
+      <workItem from="1591012231449" duration="1854000" />
+      <workItem from="1591014725335" duration="994000" />
+      <workItem from="1591016861252" duration="1423000" />
+      <workItem from="1591023758837" duration="1769000" />
+      <workItem from="1591025599539" duration="1796000" />
+      <workItem from="1591027448821" duration="1765000" />
+      <workItem from="1591029257849" duration="1745000" />
+      <workItem from="1591031137512" duration="1750000" />
+      <workItem from="1591186413038" duration="972000" />
+      <workItem from="1591188262401" duration="1761000" />
+      <workItem from="1591190096853" duration="1754000" />
+      <workItem from="1591191900166" duration="1556000" />
+      <workItem from="1591196288475" duration="583000" />
+      <workItem from="1591278395119" duration="1668000" />
+      <workItem from="1591280146017" duration="1757000" />
+      <workItem from="1591282019450" duration="1046000" />
+      <workItem from="1591283970670" duration="595000" />
+      <workItem from="1591604024606" duration="1369000" />
+      <workItem from="1591605820829" duration="594000" />
+      <workItem from="1591608566442" duration="1764000" />
+      <workItem from="1591610377135" duration="1541000" />
+      <workItem from="1591612333065" duration="1748000" />
+      <workItem from="1591614128279" duration="1270000" />
+      <workItem from="1591615985222" duration="594000" />
+      <workItem from="1591619929240" duration="1111000" />
+      <workItem from="1591621768627" duration="1763000" />
+      <workItem from="1591623577672" duration="1768000" />
+      <workItem from="1591625419123" duration="1085000" />
+      <workItem from="1591627214489" duration="598000" />
+      <workItem from="1591636063352" duration="1643000" />
+      <workItem from="1591637995757" duration="1747000" />
+      <workItem from="1591640064396" duration="1659000" />
+      <workItem from="1591641807665" duration="1739000" />
+      <workItem from="1591643693548" duration="1236000" />
+      <workItem from="1591645512345" duration="1771000" />
+      <workItem from="1591647331546" duration="1788000" />
+      <workItem from="1591649271934" duration="1464000" />
+      <workItem from="1591687294259" duration="1505000" />
+      <workItem from="1591689275666" duration="1374000" />
+      <workItem from="1591691072331" duration="1760000" />
+      <workItem from="1591692874808" duration="968000" />
+      <workItem from="1591694712565" duration="1826000" />
+      <workItem from="1591696640757" duration="594000" />
+      <workItem from="1591698565573" duration="1768000" />
+      <workItem from="1591700582807" duration="1562000" />
+      <workItem from="1591795648450" duration="1614000" />
+      <workItem from="1592229349281" duration="731000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__POS_src_test_resources_testng-polls_xml - 2020.05.28 at 14h 19m 34s.xml">
-      <configuration name="C:/POS/src/test/resources/testng-polls.xml" configurationId="TestNG" />
+    <history-entry file="EntityFilterTests - 2020.06.09 at 13h 46m 12s.xml">
+      <configuration name="EntityFilterTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__POS_src_test_resources_testng-polls_xml - 2020.05.28 at 14h 25m 59s.xml">
-      <configuration name="C:/POS/src/test/resources/testng-polls.xml" configurationId="TestNG" />
+    <history-entry file="EntityFilterTests - 2020.06.09 at 13h 48m 39s.xml">
+      <configuration name="EntityFilterTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__POS_src_test_resources_testng-polls_xml - 2020.05.28 at 14h 26m 59s.xml">
-      <configuration name="C:/POS/src/test/resources/testng-polls.xml" configurationId="TestNG" />
+    <history-entry file="EntityFilterTests - 2020.06.09 at 14h 16m 46s.xml">
+      <configuration name="EntityFilterTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PollCreationTests - 2020.05.28 at 17h 25m 19s.xml">
-      <configuration name="PollCreationTests" configurationId="TestNG" />
+    <history-entry file="EntityFilterTests - 2020.06.09 at 14h 16m 48s.xml">
+      <configuration name="EntityFilterTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PollCreationTests - 2020.05.28 at 17h 26m 20s.xml">
-      <configuration name="PollCreationTests" configurationId="TestNG" />
+    <history-entry file="EntityFilterTests - 2020.06.09 at 14h 17m 33s.xml">
+      <configuration name="EntityFilterTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__POS_src_test_resources_testng-polls_xml - 2020.05.28 at 17h 41m 05s.xml">
-      <configuration name="C:/POS/src/test/resources/testng-polls.xml" configurationId="TestNG" />
+    <history-entry file="EntityFilterTests - 2020.06.09 at 14h 18m 59s.xml">
+      <configuration name="EntityFilterTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__POS_src_test_resources_testng-polls_xml - 2020.05.28 at 18h 00m 26s.xml">
-      <configuration name="C:/POS/src/test/resources/testng-polls.xml" configurationId="TestNG" />
+    <history-entry file="EntityFilterTests - 2020.06.09 at 14h 19m 57s.xml">
+      <configuration name="EntityFilterTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContestCreationTests - 2020.05.28 at 18h 03m 40s.xml">
-      <configuration name="ContestCreationTests" configurationId="TestNG" />
+    <history-entry file="EntityFilterTests - 2020.06.10 at 16h 41m 22s.xml">
+      <configuration name="EntityFilterTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__POS_src_test_resources_testng-polls_xml - 2020.05.28 at 18h 13m 29s.xml">
-      <configuration name="C:/POS/src/test/resources/testng-polls.xml" configurationId="TestNG" />
+    <history-entry file="EntityFilterTests - 2020.06.10 at 16h 43m 59s.xml">
+      <configuration name="EntityFilterTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__POS_src_test_resources_testng-polls_xml - 2020.05.28 at 18h 19m 26s.xml">
-      <configuration name="C:/POS/src/test/resources/testng-polls.xml" configurationId="TestNG" />
+    <history-entry file="EntityFilterTests - 2020.06.15 at 17h 05m 08s.xml">
+      <configuration name="EntityFilterTests" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="422565000" />
+    <option name="totallyTimeSpent" value="491330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31130064" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.41577825" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -875,7 +875,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26948053" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28246754" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -904,124 +904,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/SessionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/ContestData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/LocalDiscussionData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/LocalPollData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/LocalValueData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/NewsData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/ProjectData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestDeletionTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="119" selection-start-line="11" selection-start-column="119" selection-end-line="11" selection-end-column="119" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestModificationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestPublicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionDeletionTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionModificationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionPublicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1112,36 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsDeletionTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsModificationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/ProjectModificationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1149,20 +1005,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1176,28 +1018,8 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/remote.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="53" column="95" selection-start-line="53" selection-start-column="95" selection-end-line="53" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/local.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/ProjectCreationTests.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1219,79 +1041,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalDiscussionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="46" column="62" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ProjectHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="44" column="62" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="173" selection-start-line="12" selection-start-column="173" selection-end-line="12" selection-end-column="173" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollDeletionTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="173" selection-start-line="13" selection-start-column="173" selection-end-line="13" selection-end-column="173" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/PollData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#submitPollCreation#0;class#PollHelper#0" />
-            <element signature="method#initPollCreation#0;class#PollHelper#0" />
-            <element signature="method#submitPollModification#0;class#PollHelper#0" />
           </folding>
         </state>
       </provider>
@@ -1316,17 +1071,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollModificationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionPublicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+        <state relative-caret-position="187">
+          <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsPublicationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionCreationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <caret line="14" column="90" selection-start-line="14" selection-start-column="90" selection-end-line="14" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionDeletionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="90" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/LocalDiscussionModificationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="92" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/LocalDiscussionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
+          <folding>
+            <element signature="e#2370#2371#0" expanded="true" />
+            <element signature="e#2444#2445#0" expanded="true" />
+            <element signature="e#2497#2498#0" expanded="true" />
+            <element signature="e#2548#2549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/ContestData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestDeletionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestModificationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/ContestPublicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollDeletionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollModificationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1335,18 +1204,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollPublicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NavigationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="122" lean-forward="true" selection-start-line="12" selection-start-column="122" selection-end-line="12" selection-end-column="122" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/NewsData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
+          <folding>
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsDeletionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="110" selection-start-line="12" selection-start-column="110" selection-end-line="12" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsModificationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="123" lean-forward="true" selection-start-line="14" selection-start-column="123" selection-end-line="14" selection-end-column="123" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/NewsPublicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/PollData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ContestHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="45" column="70" lean-forward="true" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
+        <state relative-caret-position="561">
+          <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#closeAlertAndGetItsText#0;class#ContestHelper#0" />
@@ -1356,8 +1293,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testng-polls.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/PollCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/PollHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/NewsHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/EntityFilterHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="111" column="99" selection-start-line="111" selection-start-column="99" selection-end-line="111" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/model/EntityFilterData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/tests/test/EntityFilterTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

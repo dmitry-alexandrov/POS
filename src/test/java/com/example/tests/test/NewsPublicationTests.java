@@ -9,7 +9,7 @@ public class NewsPublicationTests extends TestBase {
     public void testNewsPublication() throws Exception {
         app.getNavigationHelper().gotoNewsListPage();
         app.getNewsHelper().initNewsCreation();
-        app.getNewsHelper().fillNewsForm(new NewsData("Новость тест", "Описание новости", "Ярославская", "Ярославль"));
+        app.getNewsHelper().fillNewsForm(new NewsData("Новость тест", "Описание новости", "Ярославская", null, "Ярославль"));
         app.getNewsHelper().submitNewsCreation();
 
         app.getNavigationHelper().gotoNewsListPage();

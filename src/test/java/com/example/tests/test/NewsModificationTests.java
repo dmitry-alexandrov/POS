@@ -12,7 +12,7 @@ public class NewsModificationTests extends TestBase {
         app.getNewsHelper().selectNews();
         app.getNewsHelper().initNewsModification();
         File attachment_document_1 = new File("src/test/resources/тест.docx");
-        app.getNewsHelper().modifyNewsForm(new NewsData("Новость тест ред.", "Описание новости ред.", "Ярославская", "Ярославль"));
+        app.getNewsHelper().modifyNewsForm(new NewsData("Новость тест ред.", "Описание новости ред.", "Ярославская", null, "Ярославль"));
         app.getNewsHelper().submitNewsModification();
     }
 

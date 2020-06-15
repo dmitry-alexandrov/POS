@@ -10,7 +10,7 @@ public class NewsCreationTests extends TestBase {
 
         app.getNavigationHelper().gotoNewsListPage();
         app.getNewsHelper().initNewsCreation();
-        app.getNewsHelper().fillNewsForm(new NewsData("Новость тест", "Описание новости", "Ярославская", "Ярославль"));
+        app.getNewsHelper().fillNewsForm(new NewsData("Новость тест", "Описание новости", "Ярославская", "Муниципальный", "Ярославль"));
         app.getNewsHelper().submitNewsCreation();
 
     }
