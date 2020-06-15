@@ -28,7 +28,7 @@
             <class name="com.example.tests.test.NewsCreationTests"/>
             <class name="com.example.tests.test.NewsModificationTests"/>
             <class name="com.example.tests.test.NewsPublicationTests"/>
-           
+            <class name="com.example.tests.test.EntityFilterTests"/>
         </classes>
     </test>
 </suite>
