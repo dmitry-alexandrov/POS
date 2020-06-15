@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1" verbose="1">
-    <test name="Polls">
+    <test name="Polls" preserve-order="true" enabled="true">
         <classes>
             <class name="com.example.tests.test.PollDeletionTests"/>
             <class name="com.example.tests.test.PollCreationTests"/>
