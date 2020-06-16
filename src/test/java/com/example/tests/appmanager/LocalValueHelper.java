@@ -1,14 +1,14 @@
 package com.example.tests.appmanager;
 
-
 import com.example.tests.model.LocalValueData;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertTrue;
-
 
 public class LocalValueHelper extends HelperBase {
 
@@ -20,39 +20,20 @@ public class LocalValueHelper extends HelperBase {
 
     public void submitLocalValueCreation() throws InterruptedException {
         click(By.xpath("//button[@type='submit']"));
-        Thread.sleep(2000);
+        Thread.sleep(1000);
     }
 
     public void fillLocalValueForm(LocalValueData localValueData) throws InterruptedException {
-
         type(By.id("poll-title"), localValueData.getTitle());
         type(By.id("poll-description"), localValueData.getDescription());
-        click(By.xpath("//span[@id='select2-poll-region_id-container']/span"));
-        type(By.xpath("//input[@type='search']"), localValueData.getRegion());
-        Thread.sleep(1000);
-        driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
-        Thread.sleep(1000);
-        click(By.xpath("//span[@id='select2-poll-municipality_id-container']/span"));
-        type(By.xpath("//input[@type='search']"), localValueData.getMunicipality());
-        driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
+        select_2(By.xpath("//*[@id='select2-poll-region_id-container']"), By.xpath("//input[@type='search']"), localValueData.getRegion());
+        Thread.sleep(500); //Костыль, нужно переделать
+        select_2(By.xpath("//*[@id='municipal-div']/div/span/span[1]/span/span[2]"), By.xpath("//input[@type='search']"), localValueData.getMunicipality());
+        type(By.id("poll-form_date_from"), localValueData.getDate_start());
+        type(By.id("poll-form_date_to"), localValueData.getDate_end());
         type(By.id("attachment-0-title"), localValueData.getAttachment_name());
         type(By.id("attachment-0-description"), localValueData.getAttachment_description_1());
         attach(By.id("attachment-0-file"), localValueData.getAttachment_1());
-       // driver.findElement(By.id("poll-form_date_from")).click();
-       // driver.findElement(By.xpath("//tr[5]/td[6]")).click();
-       // driver.findElement(By.id("poll-form_date_to")).click();
-       // driver.findElement(By.xpath("//tr[6]/td[7]")).click();
-
-        driver.findElement(By.id("poll-form_date_from")).click();
-        driver.findElement(By.xpath("//th[3]")).click();
-        driver.findElement(By.xpath("//tr[6]/td[3]")).click();
-        driver.findElement(By.id("poll-form_date_to")).click();
-        driver.findElement(By.xpath("//tr[5]/td[5]")).click();
-
-        type(By.id("attachment-0-title"), localValueData.getAttachment_name());
-        type(By.id("attachment-0-description"), localValueData.getAttachment_description_1());
-        attach(By.id("attachment-0-file"), localValueData.getAttachment_1());
-        driver.findElement(By.id("pollquestion-0-title")).sendKeys("Вопрос 1");
         type(By.id("pollquestion-0-title"), localValueData.getQuestion_1());
         type(By.id("pollquestion-0-rating_to"), localValueData.getQuestion_option_1());
 
@@ -62,9 +43,87 @@ public class LocalValueHelper extends HelperBase {
         click(By.linkText("Создать обсуждение (оценка)"));
     }
 
-    public void selectLocalValue() {
-        click(By.linkText("Оценка МЗ тест"));
-        acceptNextAlert = true;
+    public void selectLocalValueModify() {
+        while (true) {
+
+            if(driver.findElements(By.linkText("Оценка МЗ тест для модификации")).size() != 0) {
+
+                click(By.linkText("Оценка МЗ тест для модификации"));
+
+                break;
+
+            } else {
+
+                   try {
+
+                       click(By.linkText("»"));
+
+                   } catch (NoSuchElementException ex) {
+
+                                Assert.fail("NoSuchElementException", ex);
+
+                        }
+
+            }
+
+        }
+
+    }
+
+    public void selectLocalValuePublish() {
+
+        while (true) {
+
+            if(driver.findElements(By.linkText("Оценка МЗ тест (Опубликован)")).size() != 0) {
+
+                click(By.linkText("Оценка МЗ тест (Опубликован)"));
+
+                break;
+
+            } else {
+
+                try {
+
+                    click(By.linkText("»"));
+
+                } catch (NoSuchElementException ex) {
+
+                    Assert.fail("NoSuchElementException", ex);
+
+                }
+
+            }
+
+        }
+
+    }
+
+    public void selectLocalValueDelete() {
+
+        while (true) {
+
+            if(driver.findElements(By.linkText("Оценка МЗ тест (Удалено)")).size() != 0) {
+
+                click(By.linkText("Оценка МЗ тест (Удалено)"));
+
+                break;
+
+            } else {
+
+                try {
+
+                    click(By.linkText("»"));
+
+                } catch (NoSuchElementException ex) {
+
+                    Assert.fail("NoSuchElementException", ex);
+
+                }
+
+            }
+
+        }
+
     }
 
     public void initLocalValueModification() {
@@ -75,32 +134,14 @@ public class LocalValueHelper extends HelperBase {
 
         type(By.id("poll-title"), localValueData.getTitle());
         type(By.id("poll-description"), localValueData.getDescription());
-        //click(By.xpath("//span[@id='select2-poll-region_id-container']/span"));
-        //type(By.xpath("//input[@type='search']"), localValueData.getRegion());
-       // Thread.sleep(1000);
-        //driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
-        //Thread.sleep(1000);
-        //click(By.xpath("//span[@id='select2-poll-municipality_id-container']/span"));
-        //type(By.xpath("//input[@type='search']"), localValueData.getMunicipality());
-        //driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
+        select_2(By.xpath("//*[@id='select2-poll-region_id-container']"), By.xpath("//input[@type='search']"), localValueData.getRegion());
+        Thread.sleep(500); //Костыль, нужно переделать
+        select_2(By.xpath("//*[@id='municipal-div']/div/span/span[1]/span/span[2]"), By.xpath("//input[@type='search']"), localValueData.getMunicipality());
+        type(By.id("poll-form_date_from"), localValueData.getDate_start());
+        type(By.id("poll-form_date_to"), localValueData.getDate_end());
         type(By.id("attachment-0-title"), localValueData.getAttachment_name());
         type(By.id("attachment-0-description"), localValueData.getAttachment_description_1());
         attach(By.id("attachment-0-file"), localValueData.getAttachment_1());
-      //  driver.findElement(By.id("poll-form_date_from")).click();
-      //  driver.findElement(By.xpath("//tr[5]/td[6]")).click();
-       // driver.findElement(By.id("poll-form_date_to")).click();
-      //  driver.findElement(By.xpath("//tr[6]/td[7]")).click();
-
-        driver.findElement(By.id("poll-form_date_from")).click();
-        driver.findElement(By.xpath("//th[3]")).click();
-        driver.findElement(By.xpath("//tr[6]/td[3]")).click();
-        driver.findElement(By.id("poll-form_date_to")).click();
-        driver.findElement(By.xpath("//tr[5]/td[5]")).click();
-
-        type(By.id("attachment-0-title"), localValueData.getAttachment_name());
-        type(By.id("attachment-0-description"), localValueData.getAttachment_description_1());
-        attach(By.id("attachment-0-file"), localValueData.getAttachment_1());
-        driver.findElement(By.id("pollquestion-0-title")).sendKeys("Вопрос 1");
         type(By.id("pollquestion-0-title"), localValueData.getQuestion_1());
         type(By.id("pollquestion-0-rating_to"), localValueData.getQuestion_option_1());
 
@@ -123,10 +164,9 @@ public class LocalValueHelper extends HelperBase {
 
     }
 
-
     public void submitLocalValueModification() throws InterruptedException {
         click(By.xpath("//button[@type='submit']"));
-        Thread.sleep(3000);
+        Thread.sleep(1000);
 
     }
 
@@ -138,7 +178,7 @@ public class LocalValueHelper extends HelperBase {
 
     public void publishLocalValue() throws InterruptedException {
         click(By.linkText("Опубликовать"));
-        Thread.sleep(3000);
+        Thread.sleep(1000);
     }
 
 }

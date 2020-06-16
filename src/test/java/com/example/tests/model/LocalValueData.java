@@ -7,17 +7,23 @@ public class LocalValueData {
     private final String description;
     private final String region;
     private final String municipality;
+    private final String date_start;
+    private final String date_end;
     private final String attachment_name_1;
     private final String attachment_description_1;
     private final File attachment_document_1;
     private final String question_1;
     private final String question_option_1;
 
-    public LocalValueData(String title, String description, String region, String municipality, String attachment_name_1, String attachment_description_1, File attachment_document_1, String question_1, String question_option_1) {
+
+
+    public LocalValueData(String title, String description, String region, String municipality, String date_start, String date_end, String attachment_name_1, String attachment_description_1, File attachment_document_1, String question_1, String question_option_1) {
         this.title = title;
         this.description = description;
         this.region = region;
         this.municipality = municipality;
+        this.date_start = date_start;
+        this.date_end = date_end;
         this.attachment_name_1 = attachment_name_1;
         this.attachment_description_1 = attachment_description_1;
         this.attachment_document_1 = attachment_document_1;
@@ -36,6 +42,14 @@ public class LocalValueData {
 
     public String getRegion() {
         return region;
+    }
+
+    public String getDate_start() {
+        return date_start;
+    }
+
+    public String getDate_end() {
+        return date_end;
     }
 
     public String getMunicipality() {

@@ -54,7 +54,7 @@ public class ApplicationManager {
 
                 } else if (browser.equals(BrowserType.CHROME)) {
 
-                    System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+                    System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
                     //"/usr/local/bin/chromedriver" "C:\\Tools\\Tools\\chromedriver.exe"
                     driver = new ChromeDriver();
 
@@ -73,7 +73,7 @@ public class ApplicationManager {
             }
 
         baseUrl = "https://www.google.com/";
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("http://pos.maxitlab.com/og/login");
         pollHelper = new PollHelper(driver);
         localPollHelper = new LocalPollHelper(driver);

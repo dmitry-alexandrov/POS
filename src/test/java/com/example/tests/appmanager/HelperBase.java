@@ -2,6 +2,7 @@ package com.example.tests.appmanager;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.io.File;
@@ -29,10 +30,11 @@ public class HelperBase {
 
     protected void select_2(By locator_1, By locator_2, String text) {
 
-        driver.findElement(locator_1).click();
-        driver.findElement(locator_2).clear();
-        driver.findElement(locator_2).sendKeys(text);
-        driver.findElement(locator_2).sendKeys(Keys.ENTER);
+            driver.findElement(locator_1).click();
+            driver.findElement(locator_2).clear();
+            driver.findElement(locator_2).sendKeys(text);
+            driver.findElement(locator_2).sendKeys(Keys.ENTER);
+
 
      //   new Select(driver.findElement(locator)).selectByVisibleText(text);
     }
@@ -45,6 +47,7 @@ public class HelperBase {
     public boolean isElementPresent(By locator) {
 
        try {
+
             driver.findElement(locator);
                 return true;
        } catch (NoSuchElementException ex) {
@@ -61,4 +64,14 @@ public class HelperBase {
             return false;
         }
     }
+
+    public void addQuestion(By locator) {
+        click(locator);
+    }
+
+    public void addAnswer(By locator) {
+        click(locator);
+    }
+
+
 }
