@@ -7,6 +7,10 @@
             <class name="com.example.tests.test.LocalValueCreationTests"/>
             <class name="com.example.tests.test.LocalValueModificationTests"/>
             <class name="com.example.tests.test.LocalValuePublicationTests"/>
+            <class name="com.example.tests.test.PollDeletionTests"/>
+            <class name="com.example.tests.test.PollCreationTests"/>
+            <class name="com.example.tests.test.PollModificationTests"/>
+            <class name="com.example.tests.test.PollPublicationTests"/>
         </classes>
     </test>
 </suite>
