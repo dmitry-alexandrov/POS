@@ -1,10 +1,8 @@
 package com.example.tests.appmanager;
 
 import com.example.tests.model.LocalDiscussionData;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.*;
+import org.testng.Assert;
 
 import static org.testng.Assert.assertTrue;
 
@@ -19,39 +17,21 @@ public class LocalDiscussionHelper extends HelperBase {
 
     public void submitLocalDiscussionCreation() throws InterruptedException {
         click(By.xpath("//button[@type='submit']"));
-        Thread.sleep(2000);
+      //  Thread.sleep(2000);
     }
 
     public void fillLocalDiscussionForm(LocalDiscussionData localDiscussionData) throws InterruptedException {
 
-
         type(By.id("discussion-name"), localDiscussionData.getTitle());
         type(By.id("discussion-description"), localDiscussionData.getDescription());
-        click(By.xpath("//span[@id='select2-discussion-region_id-container']/span"));
-        type(By.xpath("//input[@type='search']"), localDiscussionData.getRegion());
-        Thread.sleep(1000);
-        driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
-        Thread.sleep(1000);
-        click(By.xpath("//span[@id='select2-discussion-municipality_id-container']/span"));
-        type(By.xpath("//input[@type='search']"), localDiscussionData.getMunicipality());
-        driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
-        //driver.findElement(By.id("discussion-starts_at")).click();
-       // driver.findElement(By.xpath("//tr[5]/td[6]")).click();
-       // driver.findElement(By.id("discussion-ends_at")).click();
-       // driver.findElement(By.xpath("//tr[6]/td[7]")).click();
-
-        driver.findElement(By.id("discussion-starts_at")).click();
-        driver.findElement(By.xpath("//th[3]")).click();
-        driver.findElement(By.xpath("//tr[6]/td[3]")).click();
-        driver.findElement(By.id("discussion-ends_at")).click();
-        driver.findElement(By.xpath("//tr[5]/td[5]")).click();
-
+        select_2(By.id("select2-discussion-region_id-container"), By.xpath("//input[@type='search']"), localDiscussionData.getRegion());
+        Thread.sleep(500); //Костыль, нужно переделать
+        select_2(By.id("select2-discussion-municipality_id-container"), By.xpath("//input[@type='search']"), localDiscussionData.getMunicipality());
+        type(By.id("discussion-starts_at"), localDiscussionData.getDate_start());
+        type(By.id("discussion-ends_at"), localDiscussionData.getDate_end());
         type(By.id("document-title"), localDiscussionData.getAttachment_name());
-        type(By.id("document-description"), localDiscussionData.getAttachment_description_1());
-        attach(By.id("document-file"), localDiscussionData.getAttachment_1());
-
-
-
+        type(By.id("document-description"), localDiscussionData.getAttachment_description());
+        attach(By.id("document-file"), localDiscussionData.getAttachment_document());
 
     }
 
@@ -67,21 +47,11 @@ public class LocalDiscussionHelper extends HelperBase {
 
         type(By.id("discussion-name"), localDiscussionData.getTitle());
         type(By.id("discussion-description"), localDiscussionData.getDescription());
-        //click(By.xpath("//span[@id='select2-discussion-region_id-container']/span"));
-        //type(By.xpath("//input[@type='search']"), localDiscussionData.getRegion());
-        //Thread.sleep(1000);
-        //driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
-        //Thread.sleep(1000);
-        //click(By.xpath("//span[@id='select2-discussion-municipality_id-container']/span"));
-        //type(By.xpath("//input[@type='search']"), localDiscussionData.getMunicipality());
-        //driver.findElement(By.xpath("//input[@type='search']")).sendKeys(Keys.ENTER);
-        driver.findElement(By.id("discussion-starts_at")).click();
-        driver.findElement(By.xpath("//tr[5]/td[6]")).click();
-        driver.findElement(By.id("discussion-ends_at")).click();
-        driver.findElement(By.xpath("//tr[6]/td[7]")).click();
-        //type(By.id("document-title"), localDiscussionData.getAttachment_name());
-        //type(By.id("document-description"), localDiscussionData.getAttachment_description_1());
-        //attach(By.id("document-file"), localDiscussionData.getAttachment_1());
+        select_2(By.id("select2-discussion-region_id-container"), By.xpath("//input[@type='search']"), localDiscussionData.getRegion());
+        Thread.sleep(500); //Костыль, нужно переделать
+        select_2(By.id("select2-discussion-municipality_id-container"), By.xpath("//input[@type='search']"), localDiscussionData.getMunicipality());
+        type(By.id("discussion-starts_at"), localDiscussionData.getDate_start());
+        type(By.id("discussion-ends_at"), localDiscussionData.getDate_end());
 
     }
 
@@ -91,11 +61,90 @@ public class LocalDiscussionHelper extends HelperBase {
 
     }
 
-    public void selectLocalDiscussion() {
+    public void selectLocalDiscussionDelete() {
 
-        click(By.linkText("1 Обсуждение документа МЗ тест"));
-        acceptNextAlert = true;
+        while (true) {
+
+            if(driver.findElements(By.linkText("Тестовое обсуждение (комментирование) для удаления")).size() != 0) {
+
+                click(By.linkText("Тестовое обсуждение (комментирование) для удаления"));
+
+                break;
+
+            } else {
+
+                try {
+
+                    click(By.linkText("»"));
+
+                } catch (NoSuchElementException ex) {
+
+                    Assert.fail("NoSuchElementException", ex);
+
+                }
+
+            }
+
+        }
+
         //Thread.sleep(1000);
+    }
+
+    public void selectLocalDiscussionModify() {
+
+        while (true) {
+
+            if(driver.findElements(By.linkText("Тестовое обсуждение (комментирование) для редактирования")).size() != 0) {
+
+                click(By.linkText("Тестовое обсуждение (комментирование) для редактирования"));
+
+                break;
+
+            } else {
+
+                try {
+
+                    click(By.linkText("»"));
+
+                } catch (NoSuchElementException ex) {
+
+                    Assert.fail("NoSuchElementException", ex);
+
+                }
+
+            }
+
+        }
+
+        //Thread.sleep(1000);
+    }
+
+    public void selectLocalDiscussionPublish() throws InterruptedException {
+
+        while (true) {
+
+            if(driver.findElements(By.linkText("Тестовое обсуждение (комментирование) для публикации")).size() != 0) {
+
+                click(By.linkText("Тестовое обсуждение (комментирование) для публикации"));
+
+                break;
+
+            } else {
+
+                try {
+
+                    click(By.linkText("»"));
+
+                } catch (NoSuchElementException ex) {
+
+                    Assert.fail("NoSuchElementException", ex);
+
+                }
+
+            }
+
+        }
+
     }
 
     private String closeAlertAndGetItsText() {
@@ -124,7 +173,7 @@ public class LocalDiscussionHelper extends HelperBase {
 
     public void publishLocalDiscussion() throws InterruptedException {
         click(By.linkText("Опубликовать"));
-        Thread.sleep(2000);
+        Thread.sleep(5000);
     }
 
 }

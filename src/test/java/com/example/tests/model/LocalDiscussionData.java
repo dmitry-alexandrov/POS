@@ -7,19 +7,23 @@ public class LocalDiscussionData {
     private final String description;
     private final String region;
     private final String municipality;
-    private final String attachment_name_1;
-    private final String attachment_description_1;
-    private final File attachment_document_1;
+    private final String date_start;
+    private final String date_end;
+    private final String attachment_name;
+    private final String attachment_description;
+    private final File attachment_document;
 
 
-    public LocalDiscussionData(String title, String description, String region, String municipality, String attachment_name_1, String attachment_description_1, File attachment_document_1) {
+    public LocalDiscussionData(String title, String description, String region, String municipality, String date_start, String date_end, String attachment_name, String attachment_description, File attachment_document) {
         this.title = title;
         this.description = description;
         this.region = region;
         this.municipality = municipality;
-        this.attachment_name_1 = attachment_name_1;
-        this.attachment_description_1 = attachment_description_1;
-        this.attachment_document_1 = attachment_document_1;
+        this.date_start = date_start;
+        this.date_end = date_end;
+        this.attachment_name = attachment_name;
+        this.attachment_description = attachment_description;
+        this.attachment_document = attachment_document;
 
 
     }
@@ -40,14 +44,18 @@ public class LocalDiscussionData {
         return municipality;
     }
 
-    public String getAttachment_name() { return attachment_name_1; }
+    public String getDate_start() { return date_start; }
 
-    public String getAttachment_description_1() {
-        return attachment_description_1;
+    public String getDate_end() { return date_end; }
+
+    public String getAttachment_name() { return attachment_name; }
+
+    public String getAttachment_description() {
+        return attachment_description;
     }
 
-    public File getAttachment_1() {
-        return attachment_document_1;
+    public File getAttachment_document() {
+        return attachment_document;
     }
 
 }

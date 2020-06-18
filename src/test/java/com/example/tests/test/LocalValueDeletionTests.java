@@ -26,6 +26,7 @@ public class LocalValueDeletionTests extends TestBase {
         File attachment_document_1 = new File("src/test/resources/тест.docx");
         app.getLocalValueHelper().fillLocalValueForm(new LocalValueData("Оценка МЗ тест (Удалено)", "Описание оценки МЗ тест", "Ярославская область", "Ярославль", date_start, date_end, "Приложение_1", "Описание приложения_1", attachment_document_1, "1", "8"));
         app.getLocalValueHelper().submitLocalValueCreation();
+        Thread.sleep(200); //Костыль, надо исправить
 
         //Переход на страницу со списком обсуждений и выбор обсуждения (оценки) для удаления
         app.getNavigationHelper().gotoLocalEntitysPage();
