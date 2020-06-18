@@ -11,6 +11,10 @@
             <class name="com.example.tests.test.PollCreationTests"/>
             <class name="com.example.tests.test.PollModificationTests"/>
             <class name="com.example.tests.test.PollPublicationTests"/>
+            <class name="com.example.tests.test.LocalPollDeletionTests"/>
+            <class name="com.example.tests.test.LocalPollCreationTests"/>
+            <class name="com.example.tests.test.LocalPollModificationTests"/>
+            <class name="com.example.tests.test.LocalPollPublicationTests"/>
         </classes>
     </test>
 </suite>
