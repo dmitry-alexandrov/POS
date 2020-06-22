@@ -54,7 +54,7 @@ public class ApplicationManager {
 
                 } else if (browser.equals(BrowserType.CHROME)) {
 
-                    System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
+                    System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
                     //"/usr/local/bin/chromedriver" "C:\\Tools\\Tools\\chromedriver.exe"
                     driver = new ChromeDriver();
 
