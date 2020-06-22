@@ -14,13 +14,9 @@ public class LocalDiscussionModificationTests extends TestBase {
 
     @Test
     public void testLocalDiscussionModification() throws Exception {
-        Thread.sleep(200);
-        System.out.println("1");
+        Thread.sleep(200); //Костыль, надо исправить
         app.getNavigationHelper().gotoLocalEntitysPage();
-        System.out.println("2");
-
         app.getLocalDiscussionHelper().initLocalDiscussionCreation();
-        System.out.println("3");
 
         //Установка даты начала и окончания проведения опроса
         DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");

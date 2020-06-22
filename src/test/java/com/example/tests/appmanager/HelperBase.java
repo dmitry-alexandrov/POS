@@ -24,6 +24,15 @@ public class HelperBase {
       driver.findElement(locator).sendKeys(text);
     }
 
+    protected void select_3(By locator, String text) {
+
+        click(locator);
+        driver.findElement(locator).clear();
+        driver.findElement(locator).sendKeys(text);
+        driver.findElement(locator).sendKeys(Keys.ENTER);
+
+    }
+
     protected void select(By locator, String text) {
         new Select(driver.findElement(locator)).selectByVisibleText(text);
     }
@@ -38,6 +47,7 @@ public class HelperBase {
 
      //   new Select(driver.findElement(locator)).selectByVisibleText(text);
     }
+
 
     protected void attach(By locator, File file) {
 
