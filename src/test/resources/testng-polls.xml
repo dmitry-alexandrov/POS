@@ -4,6 +4,7 @@
     <test name="Polls" preserve-order="true" enabled="true">
         <classes>
             <class name="com.example.tests.test.PollDeletionTests"/>
+            <class name="com.example.tests.test.PollCreationTests"/>
         </classes>
     </test>
 </suite>
