@@ -24,7 +24,7 @@ public class ContestCreationTests extends TestBase {
         app.getContestHelper().initContestCreation();
 
 
-        app.getContestHelper().fillContestForm(new ContestData("Тестовый конкурс", "Региональный", "Ярославская", null, date_start, date_end, "1", "1", "Пожарная"));
+        app.getContestHelper().fillContestForm(new ContestData("Тестовый конкурс", "Муниципальный", "Ярославская", "Ярославль", date_start, date_end, "1", "1", "Пожарная"));
         app.getContestHelper().submitContestCreation();
 
     }

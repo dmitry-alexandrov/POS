@@ -25,7 +25,7 @@ public class ProjectCreationTests extends TestBase {
         app.getContestHelper().initContestCreation();
 
 
-        app.getContestHelper().fillContestForm(new ContestData("Тестовый конкурс (2 проекта)", "Региональный", "Вологодская", "Вологда", date_start, date_end, "1", "1", "Благо"));
+        app.getContestHelper().fillContestForm(new ContestData("Тестовый конкурс (2 проекта)", "Муниципальный", "Вологодская", "Вологда", date_start, date_end, "1", "1", "Благо"));
         app.getContestHelper().submitContestCreation();
 
         app.getNavigationHelper().gotoContestListPage();
