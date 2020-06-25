@@ -30,7 +30,7 @@ public class ContestHelper extends HelperBase{
         Thread.sleep(500); //Костыль, нужно переделать
         select_2(By.id("select2-projectcontest-region_id-container"), By.cssSelector("input[aria-controls='select2-projectcontest-region_id-results']"), contestData.getRegion());
         Thread.sleep(500); //Костыль, нужно переделать
-      //  select_2(By.id("select2-projectcontest-municipality_id-container"), By.xpath("//*[@id='region-div']/div/span/span[1]/span/span[2]"), contestData.getMunicipality());
+        select_2(By.id("select2-projectcontest-municipality_id-container"), By.cssSelector("input[aria-controls=select2-projectcontest-municipality_id-results]"), contestData.getMunicipality());
         type(By.id("projectcontest-starts_at"), contestData.getDate_start());
         type(By.id("projectcontest-ends_at"), contestData.getDate_end());
         type(By.id("projectcontest-choices_amount"), contestData.getChoicesAmount());

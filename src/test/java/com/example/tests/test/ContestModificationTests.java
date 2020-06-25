@@ -22,7 +22,7 @@ public class ContestModificationTests extends TestBase {
 
         app.getNavigationHelper().gotoContestListPage();
         app.getContestHelper().initContestCreation();
-        app.getContestHelper().fillContestForm(new ContestData("Тестовый конкурс (для редактирования)", "Региональный", "Новгородская", "Великий Новгород", date_start, date_end, "1", "1", "Пожарная"));
+        app.getContestHelper().fillContestForm(new ContestData("Тестовый конкурс (для редактирования)", "Муниципальный", "Новгородская", "Великий Новгород", date_start, date_end, "1", "1", "Пожарная"));
         app.getContestHelper().submitContestCreation();
 
 

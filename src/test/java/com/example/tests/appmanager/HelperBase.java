@@ -6,6 +6,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.io.File;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class HelperBase {
     public static WebDriver driver;
@@ -48,6 +50,17 @@ public class HelperBase {
      //   new Select(driver.findElement(locator)).selectByVisibleText(text);
     }
 
+    protected void select_4(By locator_2, String text) {
+
+        List<WebElement> element = driver.findElements(locator_2);
+        List<String> texts = element.stream().map(WebElement::getText).collect(Collectors.toList());
+        for (int i = 0; i < element.size(); i++) {
+            if (texts.get(0).equals(text)) {
+                element.get(i).click();
+                break;
+            }
+        }
+    }
 
     protected void attach(By locator, File file) {
 
