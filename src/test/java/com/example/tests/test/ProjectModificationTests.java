@@ -30,8 +30,8 @@ public class ProjectModificationTests extends TestBase {
         app.getNavigationHelper().gotoContestListPage();
         Thread.sleep(2000);
         app.getProjectHelper().initProjectCreationModify();
+        app.getProjectHelper().initProject();
         Thread.sleep(2000);
-        app.getProjectHelper().initProjectCreation();
         app.getProjectHelper().fillProjectForm(new ProjectData("Проект 1 (для редактирования)", "Описание тестового проекта 1 (для редактирования)", "ЖКХ", date_start, date_end, "1000000"));
         app.getProjectHelper().submitProjectCreation();
         //app.getPollHelper().waitPollCreation();

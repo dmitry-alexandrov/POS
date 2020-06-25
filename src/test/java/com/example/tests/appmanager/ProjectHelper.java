@@ -84,6 +84,12 @@ public class ProjectHelper extends HelperBase {
         click(By.linkText("Добавить проект"));
     }
 
+    public void initProject() {
+
+        click(By.linkText("Добавить проект"));
+
+    }
+
     public void initProjectCreationPublish() {
 
         while (true) {
