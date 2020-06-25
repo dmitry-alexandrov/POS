@@ -57,6 +57,59 @@ public class ProjectHelper extends HelperBase {
 
     public void initProjectCreation() {
 
+        while (true) {
+
+            if(driver.findElements(By.linkText("Тестовый конкурс (2 проекта)")).size() != 0) {
+
+                click(By.linkText("Тестовый конкурс (2 проекта)"));
+
+                break;
+
+            } else {
+
+                try {
+
+                    click(By.linkText("»"));
+
+                } catch (NoSuchElementException ex) {
+
+                    Assert.fail("NoSuchElementException", ex);
+
+                }
+
+            }
+
+        }
+
+        click(By.linkText("Добавить проект"));
+    }
+
+    public void initProjectCreationPublish() {
+
+        while (true) {
+
+            if(driver.findElements(By.linkText("Тестовый конкурс (для публикации)")).size() != 0) {
+
+                click(By.linkText("Тестовый конкурс (для публикации)"));
+
+                break;
+
+            } else {
+
+                try {
+
+                    click(By.linkText("»"));
+
+                } catch (NoSuchElementException ex) {
+
+                    Assert.fail("NoSuchElementException", ex);
+
+                }
+
+            }
+
+        }
+
         click(By.linkText("Добавить проект"));
     }
 

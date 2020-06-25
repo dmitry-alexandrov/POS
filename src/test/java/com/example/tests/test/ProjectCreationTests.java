@@ -30,12 +30,12 @@ public class ProjectCreationTests extends TestBase {
 
         app.getNavigationHelper().gotoContestListPage();
         app.getProjectHelper().initProjectCreation();
-        app.getProjectHelper().fillProjectForm(new ProjectData("Проект 1", "Описание тестового проекта 1", "Благоустройство", date_start, date_end, null));
+        app.getProjectHelper().fillProjectForm(new ProjectData("Проект 1", "Описание тестового проекта 1", "Благоустройство", date_start, date_end, "1000000"));
         app.getProjectHelper().submitProjectCreation();
         //app.getPollHelper().waitPollCreation();
         app.getNavigationHelper().gotoContestListPage();
         app.getProjectHelper().initProjectCreation();
-        app.getProjectHelper().fillProjectForm(new ProjectData("Проект 2", "Описание тестового проекта 2", "Благоустройство", date_start, date_end, null));
+        app.getProjectHelper().fillProjectForm(new ProjectData("Проект 2", "Описание тестового проекта 2", "Благоустройство", date_start, date_end, "2000000"));
         app.getProjectHelper().submitProjectCreation();
         Thread.sleep(2000);
     }
