@@ -3,7 +3,33 @@
 <suite name="Suite1" verbose="1">
     <test name="Polls" preserve-order="true" enabled="true">
         <classes>
+            <class name="com.example.tests.test.PollDeletionTests"/>
+            <class name="com.example.tests.test.PollCreationTests"/>
+            <class name="com.example.tests.test.PollModificationTests"/>
+            <class name="com.example.tests.test.PollPublicationTests"/>
+            <class name="com.example.tests.test.LocalValueDeletionTests"/>
+            <class name="com.example.tests.test.LocalValueCreationTests"/>
+            <class name="com.example.tests.test.LocalValueModificationTests"/>
+            <class name="com.example.tests.test.LocalValuePublicationTests"/>
+            <class name="com.example.tests.test.LocalPollDeletionTests"/>
+            <class name="com.example.tests.test.LocalPollCreationTests"/>
+            <class name="com.example.tests.test.LocalPollModificationTests"/>
+            <class name="com.example.tests.test.LocalPollPublicationTests"/>
+            <class name="com.example.tests.test.LocalDiscussionDeletionTests"/>
+            <class name="com.example.tests.test.LocalDiscussionCreationTests"/>
+            <class name="com.example.tests.test.LocalDiscussionModificationTests"/>
+            <class name="com.example.tests.test.LocalDiscussionPublicationTests"/>
+            <class name="com.example.tests.test.ContestCreationTests"/>
+            <class name="com.example.tests.test.ContestModificationTests"/>
+            <class name="com.example.tests.test.ProjectCreationTests"/>
+            <class name="com.example.tests.test.ProjectModificationTests"/>
+            <class name="com.example.tests.test.NewsDeletionTests"/>
+            <class name="com.example.tests.test.NewsCreationTests"/>
+            <class name="com.example.tests.test.NewsModificationTests"/>
+            <class name="com.example.tests.test.NewsPublicationTests"/>
             <class name="com.example.tests.test.EntitledCreationTests"/>
+            <class name="com.example.tests.test.EntitledRoleCreationTests"/>
+            <class name="com.example.tests.test.AssignEntitledCreationTests"/>
         </classes>
     </test>
 </suite>
