@@ -30,13 +30,13 @@ public class EntityFilterHelper extends HelperBase {
 
     }
 
-    public void fillFieldSearchByRegion(EntityFilterData entityFilterData) {
+    public void fillFieldSearchByRegion(EntityFilterData entityFilterData) throws InterruptedException {
 
         select_2(By.xpath("//span[@id='select2-pollsearch-region_id-container']/span"), By.xpath("//input[@type='search']"), entityFilterData.getRegion());
 
     }
 
-    public void fillFieldSearchByMunicipality(EntityFilterData entityFilterData) {
+    public void fillFieldSearchByMunicipality(EntityFilterData entityFilterData) throws InterruptedException {
 
         select_2(By.xpath("//*[@id='select2-pollsearch-municipality_id-container']"), By.xpath("//input[@type='search']"), entityFilterData.getMunicipality());
 

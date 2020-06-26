@@ -31,6 +31,7 @@ public class ContestHelper extends HelperBase{
         select_2(By.id("select2-projectcontest-region_id-container"), By.cssSelector("input[aria-controls='select2-projectcontest-region_id-results']"), contestData.getRegion());
         Thread.sleep(500); //Костыль, нужно переделать
         select_2(By.id("select2-projectcontest-municipality_id-container"), By.cssSelector("input[aria-controls=select2-projectcontest-municipality_id-results]"), contestData.getMunicipality());
+        Thread.sleep(500); //Костыль, нужно переделать
         type(By.id("projectcontest-starts_at"), contestData.getDate_start());
         type(By.id("projectcontest-ends_at"), contestData.getDate_end());
         type(By.id("projectcontest-choices_amount"), contestData.getChoicesAmount());
@@ -99,6 +100,35 @@ public class ContestHelper extends HelperBase{
 
     }
 
+    public void selectContestPublish() {
+
+        while (true) {
+
+            if(driver.findElements(By.linkText("Тестовый конкурс (для публикации)")).size() != 0) {
+
+                click(By.linkText("Тестовый конкурс (для публикации)"));
+
+                break;
+
+            } else {
+
+                try {
+
+                    click(By.linkText("»"));
+
+                } catch (NoSuchElementException ex) {
+
+                    Assert.fail("NoSuchElementException", ex);
+
+                }
+
+            }
+
+        }
+
+    }
+
+
     public void selectContestDelete() {
         while (true) {
 
@@ -157,9 +187,9 @@ public class ContestHelper extends HelperBase{
     public void publishContest() throws InterruptedException {
         click(By.linkText("Опубликовать"));
         acceptNextAlert = true;
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         assertTrue(closeAlertAndGetItsText().matches("^Вы действительно хотите опубликовать голосование по проектам?[\\s\\S]$"));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
     }
 
 }

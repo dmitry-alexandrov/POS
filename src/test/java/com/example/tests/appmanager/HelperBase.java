@@ -39,11 +39,12 @@ public class HelperBase {
         new Select(driver.findElement(locator)).selectByVisibleText(text);
     }
 
-    protected void select_2(By locator_1, By locator_2, String text) {
+    protected void select_2(By locator_1, By locator_2, String text) throws InterruptedException {
 
             driver.findElement(locator_1).click();
             driver.findElement(locator_2).clear();
             driver.findElement(locator_2).sendKeys(text);
+            Thread.sleep(500);
             driver.findElement(locator_2).sendKeys(Keys.ENTER);
 
 

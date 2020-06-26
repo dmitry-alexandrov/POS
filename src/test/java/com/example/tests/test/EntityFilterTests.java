@@ -28,7 +28,7 @@ public class EntityFilterTests extends TestBase {
 
     //Проверка работы выпадающего списка фильтра "Регион"
     @Test
-    public void testPollFilterByRegion() {
+    public void testPollFilterByRegion() throws InterruptedException {
         app.getNavigationHelper().gotoPollListPage();
         app.getEntityFilterHelper().initEntityFilter();
         app.getEntityFilterHelper().fillFieldSearchByLevel(new EntityFilterData(null, "Региональный", null, null, null, null, null, null));
@@ -39,7 +39,7 @@ public class EntityFilterTests extends TestBase {
 
     //Проверка работы выпадающего списка фильтра "Муниципалитет"
     @Test
-    public void testPollFilterByMunicipality() {
+    public void testPollFilterByMunicipality() throws InterruptedException {
         app.getNavigationHelper().gotoPollListPage();
         app.getEntityFilterHelper().initEntityFilter();
         app.getEntityFilterHelper().fillFieldSearchByLevel(new EntityFilterData(null, "Муниципальный", null, null, null, null, null, null));

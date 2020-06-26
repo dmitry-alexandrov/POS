@@ -29,6 +29,9 @@ public class ApplicationManager {
     private ProjectHelper projectHelper;
     private NewsHelper newsHelper;
     private EntityFilterHelper entityFilterHelper;
+    private EntitledHelper entitledHelper;
+    private EntitledRoleHelper entitledRoleHelper;
+    private AssignEntitledHelper assignEntitledHelper;
     public String baseUrl;
     public StringBuffer verificationErrors = new StringBuffer();
     private String browser;
@@ -54,7 +57,7 @@ public class ApplicationManager {
 
                 } else if (browser.equals(BrowserType.CHROME)) {
 
-                    System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+                    System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
                     //"/usr/local/bin/chromedriver" "C:\\Tools\\Tools\\chromedriver.exe"
                     driver = new ChromeDriver();
 
@@ -84,6 +87,9 @@ public class ApplicationManager {
         newsHelper = new NewsHelper(driver);
         navigationHelper = new NavigationHelper(driver);
         entityFilterHelper = new EntityFilterHelper(driver);
+        entitledHelper = new EntitledHelper(driver);
+        entitledRoleHelper = new EntitledRoleHelper(driver);
+        assignEntitledHelper = new AssignEntitledHelper(driver);
         sessionHelper = new SessionHelper(driver);
         sessionHelper.login("admin", "APwM$25Ek4pEfXu1N");
         //Resize the current window to the given dimension
@@ -170,6 +176,24 @@ public class ApplicationManager {
     public EntityFilterHelper getEntityFilterHelper() {
 
             return entityFilterHelper;
+
+    }
+
+    public EntitledHelper getEntitledHelper() {
+
+            return entitledHelper;
+
+    }
+
+    public EntitledRoleHelper getEntitledRoleHelper() {
+
+        return entitledRoleHelper;
+
+    }
+
+    public AssignEntitledHelper getAssignEntitledHelper() {
+
+        return assignEntitledHelper;
 
     }
 
