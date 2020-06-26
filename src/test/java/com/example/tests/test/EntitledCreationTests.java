@@ -12,7 +12,9 @@ public class EntitledCreationTests extends TestBase {
         app.getNavigationHelper().gotoEntitledListPage();
         app.getEntitledHelper().initEntitledCreation();
         app.getEntitledHelper().fillEntitledForm(new EntitledData("Тестовый уполномоченный", "Тестов Тест Тестович", "test@test.com", "Активный пользователь", "12345678", "13195190048", "тестовая организация"));
+        Thread.sleep(2000);
         app.getEntitledHelper().enterThroughEsia();
+        Thread.sleep(1000);
         app.getEntitledHelper().submitEntitledCreation();
 
     }
