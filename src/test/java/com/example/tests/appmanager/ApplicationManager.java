@@ -32,6 +32,9 @@ public class ApplicationManager {
     private EntitledHelper entitledHelper;
     private EntitledRoleHelper entitledRoleHelper;
     private AssignEntitledHelper assignEntitledHelper;
+    private ClientsApiHelper clientsApiHelper;
+    private ClientsApiRoleHelper clientsApiRoleHelper;
+    private AssignClientsApiHelper assignClientsApiHelper;
     public String baseUrl;
     public StringBuffer verificationErrors = new StringBuffer();
     private String browser;
@@ -57,7 +60,7 @@ public class ApplicationManager {
 
                 } else if (browser.equals(BrowserType.CHROME)) {
 
-                    System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+                    System.setProperty("webdriver.chrome.driver", "C:\\Tools\\Tools\\chromedriver.exe");
                     //"/usr/local/bin/chromedriver" "C:\\Tools\\Tools\\chromedriver.exe"
                     driver = new ChromeDriver();
 
@@ -90,6 +93,9 @@ public class ApplicationManager {
         entitledHelper = new EntitledHelper(driver);
         entitledRoleHelper = new EntitledRoleHelper(driver);
         assignEntitledHelper = new AssignEntitledHelper(driver);
+        clientsApiHelper = new ClientsApiHelper(driver);
+        clientsApiRoleHelper = new ClientsApiRoleHelper(driver);
+        assignClientsApiHelper = new AssignClientsApiHelper(driver);
         sessionHelper = new SessionHelper(driver);
         sessionHelper.login("admin", "APwM$25Ek4pEfXu1N");
         //Resize the current window to the given dimension
@@ -194,6 +200,24 @@ public class ApplicationManager {
     public AssignEntitledHelper getAssignEntitledHelper() {
 
         return assignEntitledHelper;
+
+    }
+
+    public  ClientsApiHelper getClientsApiHelper() {
+
+            return clientsApiHelper;
+
+    }
+
+    public  ClientsApiRoleHelper getClientsApiRoleHelper() {
+
+            return clientsApiRoleHelper;
+
+    }
+
+    public  AssignClientsApiHelper getAssignClientsApiHelper() {
+
+            return assignClientsApiHelper;
 
     }
 
