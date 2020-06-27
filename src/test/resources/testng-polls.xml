@@ -3,7 +3,6 @@
 <suite name="Suite1" verbose="1">
     <test name="Polls" preserve-order="true" enabled="true">
         <classes>
-            <class name="com.example.tests.test.PollDeletionTests"/>
             <class name="com.example.tests.test.PollCreationTests"/>
             <class name="com.example.tests.test.PollModificationTests"/>
             <class name="com.example.tests.test.PollPublicationTests"/>
@@ -30,6 +29,9 @@
             <class name="com.example.tests.test.EntitledCreationTests"/>
             <class name="com.example.tests.test.EntitledRoleCreationTests"/>
             <class name="com.example.tests.test.AssignEntitledCreationTests"/>
+            <class name="com.example.tests.test.ClientsApiCreationTests"/>
+            <class name="com.example.tests.test.ClientsApiRoleCreationTests"/>
+            <class name="com.example.tests.test.AssignClientsApiCreationTests"/>
         </classes>
     </test>
 </suite>

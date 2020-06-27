@@ -107,5 +107,77 @@ public class NavigationHelper extends HelperBase {
 
     }
 
+    public void gotoClientsApiListPage() throws InterruptedException {
+
+        while (true) {
+
+            if (driver.findElements(By.linkText("Клиенты API")).size() != 0) {
+
+                click(By.linkText("Клиенты API"));
+                Thread.sleep(1000);
+                break;
+
+            } else if(driver.findElements(By.linkText("Управление клиентами API")).size() != 0) {
+
+                click(By.linkText("Управление клиентами API"));
+
+            } else {
+
+                click(By.linkText("Настройки"));
+
+            }
+
+        }
+
+    }
+
+    public void gotoClientsApiRoleListPage() throws InterruptedException {
+
+        while (true) {
+
+            if (driver.findElements(By.linkText("Роли клиентов API")).size() != 0) {
+
+                click(By.linkText("Роли клиентов API"));
+                Thread.sleep(1000);
+                break;
+
+            } else if(driver.findElements(By.linkText("Управление клиентами API")).size() != 0) {
+
+                click(By.linkText("Управление клиентами API"));
+
+            } else {
+
+                click(By.linkText("Настройки"));
+
+            }
+
+        }
+
+    }
+
+    public void gotoAssignClientsApiListPage() throws InterruptedException {
+
+        while (true) {
+
+            if (driver.findElements(By.linkText("Назначение ролей для клиентов API")).size() != 0) {
+
+                click(By.linkText("Назначение ролей для клиентов API"));
+                Thread.sleep(1000);
+                break;
+
+            } else if(driver.findElements(By.linkText("Управление клиентами API")).size() != 0) {
+
+                click(By.linkText("Управление клиентами API"));
+
+            } else {
+
+                click(By.linkText("Настройки"));
+
+            }
+
+        }
+
+    }
+
 }
 
