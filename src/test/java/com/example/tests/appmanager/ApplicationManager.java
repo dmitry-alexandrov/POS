@@ -35,6 +35,10 @@ public class ApplicationManager {
     private ClientsApiHelper clientsApiHelper;
     private ClientsApiRoleHelper clientsApiRoleHelper;
     private AssignClientsApiHelper assignClientsApiHelper;
+    private RegionHelper regionHelper;
+    private  MunicipalityHelper municipalityHelper;
+    private SectorProjectHelper sectorProjectHelper;
+    private OrganizationHelper organizationHelper;
     public String baseUrl;
     public StringBuffer verificationErrors = new StringBuffer();
     private String browser;
@@ -96,6 +100,10 @@ public class ApplicationManager {
         clientsApiHelper = new ClientsApiHelper(driver);
         clientsApiRoleHelper = new ClientsApiRoleHelper(driver);
         assignClientsApiHelper = new AssignClientsApiHelper(driver);
+        regionHelper = new RegionHelper(driver);
+        municipalityHelper = new MunicipalityHelper(driver);
+        sectorProjectHelper = new SectorProjectHelper(driver);
+        organizationHelper = new OrganizationHelper(driver);
         sessionHelper = new SessionHelper(driver);
         sessionHelper.login("admin", "APwM$25Ek4pEfXu1N");
         //Resize the current window to the given dimension
@@ -218,6 +226,30 @@ public class ApplicationManager {
     public  AssignClientsApiHelper getAssignClientsApiHelper() {
 
             return assignClientsApiHelper;
+
+    }
+
+    public RegionHelper getRegionHelper() {
+
+        return regionHelper;
+
+    }
+
+    public MunicipalityHelper getMunicipalityHelper() {
+
+            return municipalityHelper;
+
+    }
+
+    public SectorProjectHelper getSectorProjectHelper() {
+
+            return sectorProjectHelper;
+
+    }
+
+    public OrganizationHelper getOrganizationHelper() {
+
+            return organizationHelper;
 
     }
 

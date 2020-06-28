@@ -179,5 +179,101 @@ public class NavigationHelper extends HelperBase {
 
     }
 
+    public void gotoRegionsListPage() throws InterruptedException {
+
+        while (true) {
+
+            if (driver.findElements(By.linkText("Регионы")).size() != 0) {
+
+                click(By.linkText("Регионы"));
+                Thread.sleep(1000);
+                break;
+
+            } else if(driver.findElements(By.linkText("Справочники")).size() != 0) {
+
+                click(By.linkText("Справочники"));
+
+            } else {
+
+                click(By.linkText("Настройки"));
+
+            }
+
+        }
+
+    }
+
+    public void gotoMunicipalitysListPage() throws InterruptedException {
+
+        while (true) {
+
+            if (driver.findElements(By.linkText("Муниципалитеты")).size() != 0) {
+
+                click(By.linkText("Муниципалитеты"));
+                Thread.sleep(1000);
+                break;
+
+            } else if(driver.findElements(By.linkText("Справочники")).size() != 0) {
+
+                click(By.linkText("Справочники"));
+
+            } else {
+
+                click(By.linkText("Настройки"));
+
+            }
+
+        }
+
+    }
+
+    public void gotoSectorProjectsListPage() throws InterruptedException {
+
+        while (true) {
+
+            if (driver.findElements(By.linkText("Категории проектов")).size() != 0) {
+
+                click(By.linkText("Категории проектов"));
+                Thread.sleep(1000);
+                break;
+
+            } else if(driver.findElements(By.linkText("Справочники")).size() != 0) {
+
+                click(By.linkText("Справочники"));
+
+            } else {
+
+                click(By.linkText("Настройки"));
+
+            }
+
+        }
+
+    }
+
+    public void gotoOrganizationsListPage() throws InterruptedException {
+
+        while (true) {
+
+            if (driver.findElements(By.linkText("Организации")).size() != 0) {
+
+                click(By.linkText("Организации"));
+                Thread.sleep(1000);
+                break;
+
+            } else if(driver.findElements(By.linkText("Справочники")).size() != 0) {
+
+                click(By.linkText("Справочники"));
+
+            } else {
+
+                click(By.linkText("Настройки"));
+
+            }
+
+        }
+
+    }
+
 }
 
