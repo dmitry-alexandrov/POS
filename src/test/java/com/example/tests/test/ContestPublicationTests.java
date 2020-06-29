@@ -40,7 +40,7 @@ public class ContestPublicationTests  extends TestBase {
         Thread.sleep(2000);
 
         app.getNavigationHelper().gotoContestListPage();
-        app.getContestHelper().selectContest();
+        app.getContestHelper().selectContestPublish();
         app.getContestHelper().publishContest();
 
     }
