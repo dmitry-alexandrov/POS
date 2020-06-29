@@ -48,9 +48,10 @@ public class EntityFilterHelper extends HelperBase {
 
     }
 
-    public void fillFieldSearchByType(EntityFilterData entityFilterData) {
+    public void fillFieldSearchByType(EntityFilterData entityFilterData) throws InterruptedException {
 
         select(By.id("pollsearch-type"), entityFilterData.getType());
+        Thread.sleep(1000);
 
     }
 

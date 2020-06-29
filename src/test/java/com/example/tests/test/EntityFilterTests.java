@@ -61,7 +61,7 @@ public class EntityFilterTests extends TestBase {
 
     //Проверка работы выпадающего списка фильтра "Тип"
     @Test
-    public void testPollFilterByType() {
+    public void testPollFilterByType() throws InterruptedException {
         app.getNavigationHelper().gotoPollListPage();
         app.getEntityFilterHelper().initEntityFilter();
         app.getEntityFilterHelper().fillFieldSearchByType(new EntityFilterData(null, null, null, null, null, "Опрос удовлетворенности", null, null));
