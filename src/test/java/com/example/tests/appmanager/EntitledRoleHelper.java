@@ -63,13 +63,14 @@ public class EntitledRoleHelper extends HelperBase {
     public void clickEyeEntitledRole() throws InterruptedException {
 
         clickEye(By.cssSelector("span[class='glyphicon glyphicon-eye-open']"));
+        Thread.sleep(2000);
 
     }
 
     public void modifyEntitledRole() throws InterruptedException {
 
         click(By.linkText("Редактировать"));
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
     }
 
