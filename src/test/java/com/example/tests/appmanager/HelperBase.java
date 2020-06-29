@@ -97,5 +97,20 @@ public class HelperBase {
         click(locator);
     }
 
+    public void find(By locator, String text) throws InterruptedException {
+
+        driver.findElement(locator).click();
+        driver.findElement(locator).clear();
+        driver.findElement(locator).sendKeys(text);
+        driver.findElement(locator).sendKeys(Keys.ENTER);
+        Thread.sleep(1000);
+
+    }
+
+    public void clickEye(By locator) throws InterruptedException {
+
+        driver.findElement(locator).click();
+
+    }
 
 }

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class EntitledRoleCreationTests extends TestBase {
 
     @Test
-    public void testAssigneeRoleCreation() throws Exception {
+    public void testEntitledRoleCreation() throws Exception {
 
         app.getNavigationHelper().gotoEntitledRoleListPage();
         app.getEntitledRoleHelper().initEntitledRoleCreation();

@@ -31,8 +31,14 @@
             <class name="com.example.tests.test.NewsModificationTests"/>
             <class name="com.example.tests.test.NewsPublicationTests"/>
             <class name="com.example.tests.test.EntitledCreationTests"/>
+            <class name="com.example.tests.test.EntitledDeletionTests"/>
+            <class name="com.example.tests.test.EntitledModificationTests"/>
             <class name="com.example.tests.test.EntitledRoleCreationTests"/>
+            <class name="com.example.tests.test.EntitledRoleDeletionTests"/>
+            <class name="com.example.tests.test.EntitledRoleModificationTests"/>
             <class name="com.example.tests.test.AssignEntitledCreationTests"/>
+            <class name="com.example.tests.test.AssignEntitledDeletionTests"/>
+            <class name="com.example.tests.test.AssignEntitledModificationTests"/>
             <class name="com.example.tests.test.ClientsApiCreationTests"/>
             <class name="com.example.tests.test.ClientsApiRoleCreationTests"/>
             <class name="com.example.tests.test.AssignClientsApiCreationTests"/>
