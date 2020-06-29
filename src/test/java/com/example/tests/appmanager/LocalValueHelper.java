@@ -46,9 +46,9 @@ public class LocalValueHelper extends HelperBase {
     public void selectLocalValueModify() {
         while (true) {
 
-            if(driver.findElements(By.linkText("Оценка МЗ тест для модификации")).size() != 0) {
+            if(driver.findElements(By.linkText("Тестовая оценка МЗ для редактирования")).size() != 0) {
 
-                click(By.linkText("Оценка МЗ тест для модификации"));
+                click(By.linkText("Тестовая оценка МЗ для редактирования"));
 
                 break;
 
@@ -74,9 +74,9 @@ public class LocalValueHelper extends HelperBase {
 
         while (true) {
 
-            if(driver.findElements(By.linkText("Оценка МЗ тест (Опубликован)")).size() != 0) {
+            if(driver.findElements(By.linkText("Тестовая оценка МЗ тест (Опубликован)")).size() != 0) {
 
-                click(By.linkText("Оценка МЗ тест (Опубликован)"));
+                click(By.linkText("Тестовая оценка МЗ тест (Опубликован)"));
 
                 break;
 
@@ -102,9 +102,9 @@ public class LocalValueHelper extends HelperBase {
 
         while (true) {
 
-            if(driver.findElements(By.linkText("Оценка МЗ тест (Удалено)")).size() != 0) {
+            if(driver.findElements(By.linkText("Тестовая оценка МЗ (Удалено)")).size() != 0) {
 
-                click(By.linkText("Оценка МЗ тест (Удалено)"));
+                click(By.linkText("Тестовая оценка МЗ (Удалено)"));
 
                 break;
 

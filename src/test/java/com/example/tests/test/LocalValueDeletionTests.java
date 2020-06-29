@@ -24,7 +24,7 @@ public class LocalValueDeletionTests extends TestBase {
         calendar.add(Calendar.MONTH, +1); //Увеличение месяца на +1
         String date_end = dateFormat.format(calendar.getTime());
         File attachment_document_1 = new File("src/test/resources/тест.docx");
-        app.getLocalValueHelper().fillLocalValueForm(new LocalValueData("Оценка МЗ тест (Удалено)", "Описание оценки МЗ тест", "Ярославская область", "Ярославль", date_start, date_end, "Приложение_1", "Описание приложения_1", attachment_document_1, "1", "8"));
+        app.getLocalValueHelper().fillLocalValueForm(new LocalValueData("Тестовая оценка МЗ (Удалено)", "Описание оценки МЗ тест", "Ярославская область", "Ярославль", date_start, date_end, "Приложение_1", "Описание приложения_1", attachment_document_1, "1", "8"));
         app.getLocalValueHelper().submitLocalValueCreation();
         Thread.sleep(200); //Костыль, надо исправить
 
