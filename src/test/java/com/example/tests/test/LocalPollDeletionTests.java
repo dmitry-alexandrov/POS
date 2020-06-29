@@ -25,7 +25,7 @@ public class LocalPollDeletionTests extends TestBase {
         app.getNavigationHelper().gotoLocalEntitysPage();
         app.getLocalPollHelper().initLocalPollCreation();
         File attachment_document_1 = new File("src/test/resources/тест.docx");
-        app.getLocalPollHelper().fillLocalPollForm(new LocalPollData("Тестовое обсуждение (опрос) для удаления", "Описание описание тестового обсуждения (опрос)", "Ярославская область", "Ярославль", date_start, date_end, "Да", "Приложение", "Описание приложения", attachment_document_1, "Выбор варианта ответа", "Тестовый вопрос", "1", "Тестовый вариант ответа"));
+        app.getLocalPollHelper().fillMinimumLocalPollForm(new LocalPollData("Тестовое обсуждение (опрос) для удаления", "Описание описание тестового обсуждения (опрос)", "Ярославская область", "Ярославль", date_start, date_end, "Да", "Приложение", "Описание приложения", attachment_document_1, "Выбор варианта ответа", "Тестовый вопрос", "1", "Тестовый вариант ответа"));
         app.getLocalPollHelper().submitLocalPollCreation();
 
         app.getNavigationHelper().gotoLocalEntitysPage();

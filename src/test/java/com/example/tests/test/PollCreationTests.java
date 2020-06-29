@@ -23,7 +23,7 @@ public class PollCreationTests extends TestBase {
       calendar.add(Calendar.MONTH, +1); //Увеличение месяца на +1
       String date_end = dateFormat.format(calendar.getTime());
 
-      app.getPollHelper().fillMinimumPollForm(new PollData("Тестовый опрос", "Описание тестового опроса", "Федеральный", "Да", date_start, date_end, "Да", "Выбор варианта ответа", "Тестовый вопрос", "1", null, "Тестовый Вариант ответа"));
+      app.getPollHelper().fillMinimumPollForm(new PollData("Тестовый опрос (мин. полей)", "Описание тестового опроса", "Федеральный", "Да", date_start, date_end, "Да", "Выбор варианта ответа", "Тестовый вопрос", "1", null, "Тестовый Вариант ответа"));
       app.getPollHelper().submitPollCreation();
       app.getPollHelper().checkElements();
 
@@ -42,7 +42,7 @@ public class PollCreationTests extends TestBase {
         calendar.add(Calendar.MONTH, +1); //Увеличение месяца на +1
         String date_end = dateFormat.format(calendar.getTime());
 
-        app.getPollHelper().fillMaximumPollForm(new PollData("Тестовый опрос", "Описание тестового опроса", "Федеральный", "Да", date_start, date_end, "Да", "Выбор варианта ответа", "Тестовый вопрос", "1", null, "Тестовый Вариант ответа"));
+        app.getPollHelper().fillMaximumPollForm(new PollData("Тестовый опрос (макс. полей)", "Описание тестового опроса", "Федеральный", "Да", date_start, date_end, "Да", "Выбор варианта ответа", "Тестовый вопрос", "1", null, "Тестовый Вариант ответа"));
         app.getPollHelper().submitPollCreation();
         app.getPollHelper().checkElements();
 
